@@ -1,0 +1,17 @@
+# ninja log v6
+5	407	7862292770871979	ModuCalc_autogen/timestamp	5fb5fbd33e14217f
+5	407	7862292770871979	ModuCalc_autogen/mocs_compilation.cpp	5fb5fbd33e14217f
+5	407	7862292770871979	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/timestamp	5fb5fbd33e14217f
+5	407	7862292770871979	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/mocs_compilation.cpp	5fb5fbd33e14217f
+443	552	7862292771626189	CMakeFiles/ModuCalc.dir/src/modules/modules_placeholder.cpp.obj	88202985b108bb2b
+437	553	7862292771565654	CMakeFiles/ModuCalc.dir/src/types/types_placeholder.cpp.obj	23b400ff6ca133cf
+425	556	7862292771443296	CMakeFiles/ModuCalc.dir/src/core/core_placeholder.cpp.obj	76a118bd3be914da
+473	602	7862292771915719	CMakeFiles/ModuCalc.dir/src/core/evaluator.cpp.obj	41d8746014cd95f9
+479	606	7862292771981824	CMakeFiles/ModuCalc.dir/src/history/historymanager.cpp.obj	3a15fe958c902512
+494	607	7862292772140215	CMakeFiles/ModuCalc.dir/src/modules/trigonometry.cpp.obj	a6df29f26e89e2aa
+465	608	7862292771845723	CMakeFiles/ModuCalc.dir/src/core/parser.cpp.obj	efc7674caed23a54
+487	609	7862292772065332	CMakeFiles/ModuCalc.dir/src/history/scriptengine.cpp.obj	b733ac2e945cbab
+458	1246	7862292771775681	CMakeFiles/ModuCalc.dir/src/core/lexer.cpp.obj	77973d3432fb48d4
+410	2435	7862292771295501	CMakeFiles/ModuCalc.dir/ModuCalc_autogen/mocs_compilation.cpp.obj	41c66c0f60313860
+415	2462	7862292771337528	CMakeFiles/ModuCalc.dir/main.cpp.obj	9fe3822880168a4f
+419	2529	7862292771387504	CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj	1bb7f40be10ccad2
