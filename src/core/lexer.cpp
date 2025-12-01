@@ -4,11 +4,10 @@
 #include <cctype>
 #include <unordered_set>
 
-
+//dodac pomijanie bialych znakow!!!!
 using std::string;
 using std::vector;
 using std::isdigit;
-
 
 Lexer::Lexer() {
 
@@ -22,7 +21,6 @@ vector<Token> Lexer::tokenize(string input){
         char currentCharacter = input[i];
 
 
-        //numbers
         if(isdigit(currentCharacter) || currentCharacter == '.'){
             int j = i;
             string number;
@@ -42,7 +40,6 @@ vector<Token> Lexer::tokenize(string input){
         }
 
 
-        //
         else if(std::isalpha(input[i])){
             std::unordered_set<string> functions = {
                 "sin", "cos", "tg", "ctg", "asin", "acos", "atan", "actg", "log", "sqrt"
@@ -65,7 +62,6 @@ vector<Token> Lexer::tokenize(string input){
             continue;
         }
 
-        //left bracket or right bracket
         else if(currentCharacter == '('){
             type = TokenType::LPAREN;
             value = "(";
@@ -77,7 +73,6 @@ vector<Token> Lexer::tokenize(string input){
             continue;
         }
 
-        //comma
         else if(currentCharacter == ','){
             type = TokenType::COMMA;
             value = ",";
@@ -85,7 +80,7 @@ vector<Token> Lexer::tokenize(string input){
         }
 
 
-        //operators
+
         switch(currentCharacter){
         case '+':
             type = TokenType::OPERATOR;
@@ -114,7 +109,7 @@ vector<Token> Lexer::tokenize(string input){
             break;
         default:
             type = TokenType::UNKNOWN;
-            value = string("") + currentCharacter; //unknown
+            value = string("") + currentCharacter;
             break;
         }
 

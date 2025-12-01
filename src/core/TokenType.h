@@ -1,6 +1,3 @@
-#ifndef TOKENTYPE_H
-#define TOKENTYPE_H
-
 #pragma once
 
 enum class TokenType{
@@ -16,5 +13,3 @@ enum class TokenType{
 
 };
 
-
-#endif // TOKENTYPE_H

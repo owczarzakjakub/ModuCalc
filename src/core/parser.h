@@ -1,10 +1,11 @@
-#ifndef PARSER_H
-#define PARSER_H
+#pragma once
+#include "Token.h"
+#include <vector>
 
 class Parser
 {
 public:
     Parser();
+    std::vector<Token> parse(std::vector<Token> parse);
 };
 
-#endif // PARSER_H
