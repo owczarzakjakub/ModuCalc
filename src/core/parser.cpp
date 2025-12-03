@@ -31,20 +31,24 @@ vector<Token> Parser::parse(vector<Token> tokens){
         }
 
         else if(currentToken.type == TokenType::COMMA){
-            Token currentOperatorStackToken = operatorStack.top();
-            while(currentOperatorStackToken.type != TokenType::LPAREN){
-                if(currentOperatorStackToken.type == TokenType::OPERATOR){
-                    outputQueue.push_back(currentOperatorStackToken);
-                    operatorStack.pop();
-                    currentOperatorStackToken = operatorStack.top();
-                }
+            if(operatorStack.size() > 0){
+                Token currentOperatorStackToken = operatorStack.top();
+                while(operatorStack.size() > 0 && operatorStack.top().type != TokenType::LPAREN) {
+                    outputQueue.push_back(operatorStack.top());
+                    operatorStack.pop();//do spr
+                 }
             }
         }
 
         else if(currentToken.type == TokenType::OPERATOR){
             if(operatorStack.size() > 0){
                 Token currentOperatorStackToken = operatorStack.top();
-                //dokonczyc
+                while(operatorStack.size() > 0 && currentOperatorStackToken.precedence > currentToken.precedence || currentOperatorStackToken.precedence == currentToken.precedence && currentOperatorStackToken.value == "^"){
+                    outputQueue.push_back(currentOperatorStackToken);
+                    operatorStack.pop();
+                    currentOperatorStackToken = operatorStack.top();
+                }
+                operatorStack.push(currentToken);//do spr
             }
         }
 
@@ -73,8 +77,7 @@ vector<Token> Parser::parse(vector<Token> tokens){
         Token currentOperatorStackToken = operatorStack.top();
         outputQueue.push_back(currentOperatorStackToken);
         operatorStack.pop();
-        currentOperatorStackToken = operatorStack.top();
-    }
+    }// do sprawdzenia
 
     return outputQueue;
 
