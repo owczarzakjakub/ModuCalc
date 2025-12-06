@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-1594aa494fc814804ed7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ModuCalc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ModuCalc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ModuCalc-Debug-39365ed0be4f8e9108d8.json",
+					"name" : "ModuCalc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ModuCalc_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ModuCalc_autogen-Debug-262330cb2cf7cf718661.json",
+					"name" : "ModuCalc_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ModuCalc_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ModuCalc_autogen_timestamp_deps-Debug-5ed9d90bb2a9a9e5d83e.json",
+					"name" : "ModuCalc_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
