@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "src/core/lexer.h"
 #include "src/core/TokenType.h"
+#include "src/core/parser.h"
 #include <vector>
 #include <iostream>
 #include <string>
@@ -34,9 +35,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    //lexer test
+    //tokenizer test
     Lexer lex = Lexer();
-    vector<Token> tokens = lex.tokenize("3.14 +2*sin(x)-y/4^z,sqrt(16)@");
+    vector<Token> tokens = lex.tokenize("((1+2)*(3+(4*(5+6))))");
     for (const Token &t : tokens) {
         cout << t.value;
         cout<<" - Precedence: ";
@@ -44,6 +45,12 @@ int main(int argc, char *argv[])
         cout<<" - TokenType: ";
         cout<<TokenTypeToString(t.type)<<endl;
 
+    }
+    //parser test
+    Parser parser = Parser();
+    vector<Token> parsedTokens = parser.parse(tokens);
+    for (const Token &t : parsedTokens){
+        cout<<t.value<<" ";
     }
 
     return a.exec();
