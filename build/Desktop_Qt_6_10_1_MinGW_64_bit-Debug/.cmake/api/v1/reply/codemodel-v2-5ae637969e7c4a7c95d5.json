@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-a8cb8d452f5a94f77378.json",
+					"jsonFile" : "directory-.-Debug-1594aa494fc814804ed7.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ModuCalc::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ModuCalc-Debug-7d8b8b6373bdd8088236.json",
+					"jsonFile" : "target-ModuCalc-Debug-9c42d7b04750ca3c6b8f.json",
 					"name" : "ModuCalc",
 					"projectIndex" : 0
 				},

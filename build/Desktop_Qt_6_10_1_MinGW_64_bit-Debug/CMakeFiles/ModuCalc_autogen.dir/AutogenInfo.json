@@ -393,12 +393,6 @@
 			null
 		],
 		[
-			"C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/unitconversion.h",
-			"MU",
-			"L3BDCI33OQ/moc_unitconversion.cpp",
-			null
-		],
-		[
 			"C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/types/complex.h",
 			"MU",
 			"4YXDNT3YP2/moc_complex.cpp",
@@ -556,11 +550,6 @@
 		],
 		[
 			"C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/trigonometry.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/unitconversion.cpp",
 			"MU",
 			null
 		],

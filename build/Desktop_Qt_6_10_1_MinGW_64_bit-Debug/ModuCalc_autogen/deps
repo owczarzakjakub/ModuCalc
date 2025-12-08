@@ -370,8 +370,6 @@ ModuCalc_autogen/timestamp: \
 	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/statistics.h \
 	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/trigonometry.cpp \
 	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/trigonometry.h \
-	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/unitconversion.cpp \
-	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/unitconversion.h \
 	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/types/complex.cpp \
 	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/types/complex.h \
 	C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/types/matrix.cpp \

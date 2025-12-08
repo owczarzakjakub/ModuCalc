@@ -38,9 +38,9 @@ vector<Token> Lexer::tokenize(string input){
                 j++;
             }
             type = TokenType::NUMBER;
-            value = string("") + currentCharacter;
+            value = number;
             precedence = 0;
-            i = j - 1;
+            i = j;
         }
 
 

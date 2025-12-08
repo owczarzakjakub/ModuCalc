@@ -1,10 +1,20 @@
-#ifndef NUMBER_H
-#define NUMBER_H
+#pragma once
+#include <string>
+
+using std::string;
 
 class Number
 {
 public:
-    Number();
+    Number(double v = 0.0);
+    double getValue() const;
+    double add(const Number& other)const;
+    double sub(const Number& other) const;
+    double multi(const Number& other) const;
+    double div(const Number& other) const;
+    bool equal(const Number& other) const;
+    string toString() const;
+private:
+    double value;
 };
 
-#endif // NUMBER_H
