@@ -1,10 +1,7 @@
-#ifndef EVALUATOR_H
-#define EVALUATOR_H
-
+#pragma once
 class Evaluator
 {
 public:
     Evaluator();
 };
 
-#endif // EVALUATOR_H
