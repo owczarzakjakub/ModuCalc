@@ -4,7 +4,6 @@
 #include <cctype>
 #include <unordered_set>
 
-//dodac pomijanie bialych znakow!!!!
 using std::string;
 using std::vector;
 using std::isdigit;
@@ -15,10 +14,15 @@ Lexer::Lexer() {
 vector<Token> Lexer::tokenize(string input){
     vector<Token> tokens;
     for(int i = 0; i < input.length();i++){
-        TokenType type;
+        TokenType type = TokenType::UNKNOWN;
         string value;
         int precedence = 0;
         char currentCharacter = input[i];
+        value = currentCharacter;
+
+        if(std::isspace(currentCharacter)){
+            continue;
+        }
 
 
         if(isdigit(currentCharacter) || currentCharacter == '.'){
@@ -34,15 +38,15 @@ vector<Token> Lexer::tokenize(string input){
                 j++;
             }
             type = TokenType::NUMBER;
+            value = number;
             precedence = 0;
-            i = j - 1;
-            continue;
+            i = j-1;
         }
 
 
         else if(std::isalpha(input[i])){
             std::unordered_set<string> functions = {
-                "sin", "cos", "tg", "ctg", "asin", "acos", "atan", "actg", "log", "sqrt"
+                "sin", "cos", "tg", "ctg", "asin", "acos", "atan", "actg", "log", "sqrt", "max"
             };
             string functionName;
             int j = i;
@@ -56,27 +60,23 @@ vector<Token> Lexer::tokenize(string input){
                 value = functionName;
             }
             else{
-                type = TokenType::VARIABLE; //variable - rozwazyc czy zmienne moga zawierac cyfry
+                type = TokenType::VARIABLE; //rozwazyc czy zmienne moga zawierac liczby
                 value = functionName;
             }
-            continue;
         }
 
         else if(currentCharacter == '('){
             type = TokenType::LPAREN;
             value = "(";
-            continue;
         }
         else if(currentCharacter == ')'){
             type = TokenType::RPAREN;
             value = ")";
-            continue;
         }
 
         else if(currentCharacter == ','){
             type = TokenType::COMMA;
             value = ",";
-            continue;
         }
 
 
@@ -108,8 +108,8 @@ vector<Token> Lexer::tokenize(string input){
             precedence = 3;
             break;
         default:
-            type = TokenType::UNKNOWN;
-            value = string("") + currentCharacter;
+            // type = TokenType::UNKNOWN;
+            // value = string("") + currentCharacter;
             break;
         }
 

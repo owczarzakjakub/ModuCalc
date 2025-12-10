@@ -41,7 +41,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         src/history/scriptengine.h src/history/scriptengine.cpp
         src/modules/trigonometry.h src/modules/trigonometry.cpp
         src/modules/statistics.h src/modules/statistics.cpp
-        src/modules/unitconversion.h src/modules/unitconversion.cpp
+
         src/types/number.h src/types/number.cpp
         src/types/complex.h src/types/complex.cpp
         src/types/vector.h src/types/vector.cpp
