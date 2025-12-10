@@ -1,10 +1,7 @@
-#ifndef MATRIX_H
-#define MATRIX_H
+#pragma once
 
 class Matrix
 {
 public:
     Matrix();
 };
-
-#endif // MATRIX_H

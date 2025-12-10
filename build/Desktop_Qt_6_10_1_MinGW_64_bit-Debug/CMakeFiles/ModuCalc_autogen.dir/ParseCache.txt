@@ -165,13 +165,13 @@ C:/Users/User/Documents/MyProjectsRepos/ModuCalc/mainwindow.h
  mdp:C:/Qt/6.10.1/mingw_64/include/QtWidgets/qwidget.h
  mdp:C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/moc_predefs.h
  mdp:C:/Users/User/Documents/MyProjectsRepos/ModuCalc/mainwindow.h
-C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/token.h
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/parser.h
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/trigonometry.h
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/evaluator.h
+C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/TokenType.h
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/unitconversion.cpp
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/types/vector.h
-C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/TokenType.h
+C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/token.h
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/modules/modules_placeholder.h
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/history/history_placeholder.h
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/core_placeholder.h
