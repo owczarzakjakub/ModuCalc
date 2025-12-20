@@ -23,3 +23,15 @@
 1275	5479	7879339811238839	CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj	a9471f4e4ddb9cf5
 1268	5519	7879339811078030	CMakeFiles/ModuCalc.dir/main.cpp.obj	b200b7ce106f498c
 5519	6079	7879339853736331	ModuCalc.exe	1846655e425dd49e
+55	261	7879493429274178	ModuCalc_autogen/timestamp	fb8c3896fe326edb
+55	261	7879493429274178	ModuCalc_autogen/mocs_compilation.cpp	fb8c3896fe326edb
+55	261	7879493429274178	C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/timestamp	fb8c3896fe326edb
+55	261	7879493429274178	C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/mocs_compilation.cpp	fb8c3896fe326edb
+330	1661	7879493432035696	CMakeFiles/ModuCalc.dir/src/types/number.cpp.obj	9853378faf64ef55
+325	1671	7879493431980462	CMakeFiles/ModuCalc.dir/src/history/scriptengine.cpp.obj	43fcf6f5eeb463ec
+336	1677	7879493432090779	CMakeFiles/ModuCalc.dir/src/types/vector.cpp.obj	cebf91236538bd0b
+319	1681	7879493431930466	CMakeFiles/ModuCalc.dir/src/history/historymanager.cpp.obj	f1e89449cab44890
+342	1709	7879493432152707	CMakeFiles/ModuCalc.dir/src/types/matrix.cpp.obj	fd2362c65aee2e38
+314	1864	7879493431875257	CMakeFiles/ModuCalc.dir/src/core/evaluator.cpp.obj	678be1f1a32fc66
+263	4489	7879493431357839	CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj	a9471f4e4ddb9cf5
+4490	5692	7879493473633210	ModuCalc.exe	1846655e425dd49e

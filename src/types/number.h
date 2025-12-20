@@ -7,13 +7,16 @@ class Number
 {
 public:
     Number(double v = 0.0);
+    double toDouble() const;
+    std::string toString() const;
     double getValue() const;
-    double add(const Number& other)const;
-    double sub(const Number& other) const;
-    double multi(const Number& other) const;
-    double div(const Number& other) const;
-    bool equal(const Number& other) const;
-    string toString() const;
+
+    Number operator+(const Number& other)const;
+    Number operator-(const Number& other) const;
+    Number operator*(const Number& other) const;
+    Number operator/(const Number& other) const;
+    bool operator==(const Number& other) const;
+
 private:
     double value;
 };
