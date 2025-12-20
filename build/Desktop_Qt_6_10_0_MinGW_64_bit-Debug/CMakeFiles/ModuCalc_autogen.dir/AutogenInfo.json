@@ -1,19 +1,72 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc",
+	"BUILD_DIR" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/admin/Desktop/ModuCalc",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/CMakeLists.txt",
-		"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
-		"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
+		"C:/Users/admin/Desktop/ModuCalc/CMakeLists.txt",
+		"C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystem.cmake.in",
+		"C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeNinjaFindMake.cmake",
+		"C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake",
-		"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Determine-CXX.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GNU-FindBinUtils.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
+		"C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -26,11 +79,27 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake",
-		"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineRCCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCCompiler.cmake.in",
+		"C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
+		"C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
 		"C:/Qt/6.10.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"C:/Qt/6.10.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"C:/Qt/6.10.0/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -316,124 +385,124 @@
 		"C:/Qt/6.10.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc",
+	"CMAKE_SOURCE_DIR" : "C:/Users/admin/Desktop/ModuCalc",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/deps",
+	"DEP_FILE" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "ModuCalc_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/mainwindow.h",
+			"C:/Users/admin/Desktop/ModuCalc/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/TokenType.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/core/TokenType.h",
 			"MU",
 			"PRMOGMWJPH/moc_TokenType.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/core_placeholder.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/core/core_placeholder.h",
 			"MU",
 			"PRMOGMWJPH/moc_core_placeholder.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/evaluator.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/core/evaluator.h",
 			"MU",
 			"PRMOGMWJPH/moc_evaluator.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/lexer.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/core/lexer.h",
 			"MU",
 			"PRMOGMWJPH/moc_lexer.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/parser.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/core/parser.h",
 			"MU",
 			"PRMOGMWJPH/moc_parser.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/token.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/core/token.h",
 			"MU",
 			"PRMOGMWJPH/moc_token.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/history_placeholder.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/history/history_placeholder.h",
 			"MU",
 			"XR2EHANXZY/moc_history_placeholder.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/historymanager.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/history/historymanager.h",
 			"MU",
 			"XR2EHANXZY/moc_historymanager.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/scriptengine.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/history/scriptengine.h",
 			"MU",
 			"XR2EHANXZY/moc_scriptengine.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/modules_placeholder.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/modules/modules_placeholder.h",
 			"MU",
 			"L3BDCI33OQ/moc_modules_placeholder.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/statistics.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/modules/statistics.h",
 			"MU",
 			"L3BDCI33OQ/moc_statistics.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/trigonometry.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/modules/trigonometry.h",
 			"MU",
 			"L3BDCI33OQ/moc_trigonometry.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/complex.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/types/complex.h",
 			"MU",
 			"4YXDNT3YP2/moc_complex.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/matrix.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/types/matrix.h",
 			"MU",
 			"4YXDNT3YP2/moc_matrix.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/number.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/types/number.h",
 			"MU",
 			"4YXDNT3YP2/moc_number.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/types_placeholder.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/types/types_placeholder.h",
 			"MU",
 			"4YXDNT3YP2/moc_types_placeholder.cpp",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/vector.h",
+			"C:/Users/admin/Desktop/ModuCalc/src/types/vector.h",
 			"MU",
 			"4YXDNT3YP2/moc_vector.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
@@ -489,109 +558,69 @@
 		"-c",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/ModuCalc_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/ModuCalc_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/ModuCalc_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.10.0/mingw_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.10.0/mingw_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 10,
-	"SETTINGS_FILE" : "C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/ModuCalc_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/admin/Desktop/ModuCalc/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/ModuCalc_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/admin/Desktop/ModuCalc/main.cpp", "MU", null ],
+		[ "C:/Users/admin/Desktop/ModuCalc/mainwindow.cpp", "MU", null ],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/main.cpp",
+			"C:/Users/admin/Desktop/ModuCalc/src/core/core_placeholder.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/admin/Desktop/ModuCalc/src/core/evaluator.cpp", "MU", null ],
+		[ "C:/Users/admin/Desktop/ModuCalc/src/core/lexer.cpp", "MU", null ],
+		[ "C:/Users/admin/Desktop/ModuCalc/src/core/parser.cpp", "MU", null ],
+		[ "C:/Users/admin/Desktop/ModuCalc/src/core/token.cpp", "MU", null ],
+		[
+			"C:/Users/admin/Desktop/ModuCalc/src/history/history_placeholder.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/mainwindow.cpp",
+			"C:/Users/admin/Desktop/ModuCalc/src/history/historymanager.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/core_placeholder.cpp",
+			"C:/Users/admin/Desktop/ModuCalc/src/history/scriptengine.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/evaluator.cpp",
+			"C:/Users/admin/Desktop/ModuCalc/src/modules/modules_placeholder.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/lexer.cpp",
+			"C:/Users/admin/Desktop/ModuCalc/src/modules/statistics.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/parser.cpp",
+			"C:/Users/admin/Desktop/ModuCalc/src/modules/trigonometry.cpp",
 			"MU",
 			null
 		],
+		[ "C:/Users/admin/Desktop/ModuCalc/src/types/complex.cpp", "MU", null ],
+		[ "C:/Users/admin/Desktop/ModuCalc/src/types/matrix.cpp", "MU", null ],
+		[ "C:/Users/admin/Desktop/ModuCalc/src/types/number.cpp", "MU", null ],
 		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/token.cpp",
+			"C:/Users/admin/Desktop/ModuCalc/src/types/types_placeholder.cpp",
 			"MU",
 			null
 		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/history_placeholder.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/historymanager.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/scriptengine.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/modules_placeholder.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/statistics.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/trigonometry.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/complex.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/matrix.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/number.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/types_placeholder.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/vector.cpp",
-			"MU",
-			null
-		]
+		[ "C:/Users/admin/Desktop/ModuCalc/src/types/vector.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
