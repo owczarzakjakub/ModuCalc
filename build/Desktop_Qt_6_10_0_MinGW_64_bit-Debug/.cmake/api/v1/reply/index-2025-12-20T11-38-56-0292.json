@@ -1,0 +1,97 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
+			"cpack" : "C:/Qt/Tools/CMake_64/bin/cpack.exe",
+			"ctest" : "C:/Qt/Tools/CMake_64/bin/ctest.exe",
+			"root" : "C:/Qt/Tools/CMake_64/share/cmake-3.30"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 30,
+			"patch" : 5,
+			"string" : "3.30.5",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+<<<<<<<< HEAD:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-11T20-44-05-0055.json
+			"jsonFile" : "codemodel-v2-8407b61792f09547b8a0.json",
+========
+			"jsonFile" : "codemodel-v2-5b5108b1d9bc822f000b.json",
+>>>>>>>> 40dc6bfd5539af2f7daaacdf7a49ff50cf5ecb58:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-20T11-38-56-0292.json
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 7
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-09c281a8e9ba78b16318.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-6647f54c759303b60ce0.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 1
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+			"jsonFile" : "cache-v2-09c281a8e9ba78b16318.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-6647f54c759303b60ce0.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 1
+			}
+		},
+		"codemodel-v2" : 
+		{
+<<<<<<<< HEAD:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-11T20-44-05-0055.json
+			"jsonFile" : "codemodel-v2-8407b61792f09547b8a0.json",
+========
+			"jsonFile" : "codemodel-v2-5b5108b1d9bc822f000b.json",
+>>>>>>>> 40dc6bfd5539af2f7daaacdf7a49ff50cf5ecb58:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-20T11-38-56-0292.json
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 7
+			}
+		}
+	}
+}

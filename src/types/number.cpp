@@ -5,31 +5,33 @@
 using std::string;
 
 Number::Number(double v):value(v){};
-
+double Number::toDouble() const{
+    return value;
+}
 double Number::getValue() const {
     return value;
 }
 
-double Number::add(const Number& other) const {
+Number Number::operator+(const Number& other) const {
     return value + other.value;
 }
 
-double Number::sub(const Number& other) const{
+Number Number::operator-(const Number& other) const{
     return value - other.value;
 }
 
-double Number::multi(const Number& other) const{
+Number Number::operator*(const Number& other) const{
     return value * other.value;
 }
 
-double Number::div(const Number& other) const{
+Number Number::operator/(const Number& other) const{
     if(other.value == 0){
         throw std::runtime_error("Dzielenie przez zero");
     }
     return value/other.value;
 }
 
-bool Number::equal(const Number& other) const{
+bool Number::operator==(const Number& other) const{
     if(value == other.value){
         return true;
     }

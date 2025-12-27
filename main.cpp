@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     w.show();
     //tokenizer test
     Lexer lex = Lexer();
-    vector<Token> tokens = lex.tokenize("1.2 + 5.657 * 7.9082");
+    vector<Token> tokens = lex.tokenize("(3+4)*5-(7/(3+sin(2)))");
     for (const Token &t : tokens) {
         cout << t.value;
         cout<<" - Precedence: ";

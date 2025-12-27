@@ -2,6 +2,7 @@
 #include <vector>
 #include <stack>
 #include "TokenType.h"
+#include <iostream>
 
 using std::vector;
 using std::stack;
@@ -61,7 +62,7 @@ vector<Token> Parser::parse(vector<Token> tokens){
             }
 
             else if(currentToken.type == TokenType::RPAREN){
-                if(operatorStack.top().type == TokenType::LPAREN){
+                if(operatorStack.top().type == TokenType::LPAREN && outputQueue.back().type != TokenType::NUMBER){
                     throw std::logic_error("Puste wyrażenie");
                 }
 

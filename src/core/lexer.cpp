@@ -40,7 +40,7 @@ vector<Token> Lexer::tokenize(string input){
             type = TokenType::NUMBER;
             value = number;
             precedence = 0;
-            i = j;
+            i = j-1;
         }
 
 
