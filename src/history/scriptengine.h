@@ -2,6 +2,9 @@
 #define SCRIPTENGINE_H
 #pragma once
 #include <string>
+#include "../core/lexer.h"
+#include "../core/evaluator.h"
+#include "../core/parser.h"
 #include "historymanager.h"
 #include "../types/number.h"
 class ScriptEngine

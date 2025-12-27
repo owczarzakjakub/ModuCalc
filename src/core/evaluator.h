@@ -1,6 +1,5 @@
 #pragma once
 #include <vector>
-#include <stack>
 #include "token.h"
 #include "../types/number.h"
 class Evaluator
