@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test/ModuCalc_tests[1]_tests.cmake")
+  include("C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test/ModuCalc_tests[1]_tests.cmake")
+else()
+  add_test(ModuCalc_tests_NOT_BUILT ModuCalc_tests_NOT_BUILT)
+endif()
