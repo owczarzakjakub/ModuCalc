@@ -13,7 +13,16 @@ MainWindow::~MainWindow()
     delete ui;
 }
 double MainWindow::calculateExpression(const QString &expr,bool &hasVariable,double xValue){
-    std::string input=expr.toStdString();
+    QStringList sides=expr.split("=");
+    QString combinedExpr;
+    if(sides.size()==2){
+        combinedExpr=sides[0]+"-("+sides[1]+')';
+    }
+    else{
+        combinedExpr=expr;
+    }
+
+    std::string input=combinedExpr.toStdString();
     auto tokens=lexer.tokenize(input);
     hasVariable=false;
     for(const Token &t : tokens){
@@ -25,7 +34,7 @@ double MainWindow::calculateExpression(const QString &expr,bool &hasVariable,dou
     auto parsedTokens=parser.parse(tokens);
     if(hasVariable){
         auto result=solver.solve(parsedTokens);
-        return result.coefX*xValue+result.constant;
+        return result.coefX != 0 ? -result.constant / result.coefX : 0;
     }
     else{
         Number result=evaluator.evaluate(parsedTokens);

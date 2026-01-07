@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-1594aa494fc814804ed7.json",
+					"jsonFile" : "directory-.-Debug-9827007efbbe29d6417f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,11 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ModuCalc::@6890427a1f51a3e7e1df",
-<<<<<<<< HEAD:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/codemodel-v2-8407b61792f09547b8a0.json
-					"jsonFile" : "target-ModuCalc-Debug-d34d37d4907e9322552b.json",
-========
-					"jsonFile" : "target-ModuCalc-Debug-3ed37c617619abc6d5b6.json",
->>>>>>>> 40dc6bfd5539af2f7daaacdf7a49ff50cf5ecb58:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/codemodel-v2-5b5108b1d9bc822f000b.json
+					"jsonFile" : "target-ModuCalc-Debug-daf436a85dd6c93d2d48.json",
 					"name" : "ModuCalc",
 					"projectIndex" : 0
 				},
