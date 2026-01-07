@@ -70,3 +70,13 @@ std::vector<double> Matrix::col(int c) const{
     }
     return result;
 }
+double Matrix::get(int r, int c) const
+{
+    return data[r][c];
+}
+
+void Matrix::set(int r, int c, double value)
+{
+    data[r][c] = value;
+}
+

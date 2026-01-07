@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include "src/types/matrix.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -154,4 +156,79 @@ void MainWindow::on_ButtonX_clicked()
 {
     appendToExpression("x");
 }
+void MainWindow::on_btnAdd_clicked() {
+    Matrix A = readMatrixFromTable(ui->tableMatrixA);
+    Matrix B = readMatrixFromTable(ui->tableMatrixB);
+    try {
+        Matrix result = A.add(B);
+        writeMatrixToTable(ui->tableResult, result);
+    } catch (std::logic_error &e) {
+        QMessageBox::warning(this, "Błąd", e.what());
+    }
+}
+void MainWindow::on_btnSub_clicked() {
+    Matrix A = readMatrixFromTable(ui->tableMatrixA);
+    Matrix B = readMatrixFromTable(ui->tableMatrixB);
+    try {
+        Matrix result = A.sub(B);
+        writeMatrixToTable(ui->tableResult, result);
+    } catch (std::logic_error &e) {
+        QMessageBox::warning(this, "Błąd", e.what());
+    }
+}
+void MainWindow::on_btnMul_clicked() {
+    Matrix A = readMatrixFromTable(ui->tableMatrixA);
+    Matrix B = readMatrixFromTable(ui->tableMatrixB);
+    try {
+        Matrix result = A.multi(B);
+        writeMatrixToTable(ui->tableResult, result);
+    } catch (std::logic_error &e) {
+        QMessageBox::warning(this, "Błąd", e.what());
+    }
+}
+void MainWindow::on_btnTransposeA_clicked() {
+    Matrix A = readMatrixFromTable(ui->tableMatrixA);
+    Matrix result = A.transpose();
+    writeMatrixToTable(ui->tableResult, result);
+}
+void MainWindow::on_btnClear_clicked() {
+    ui->tableMatrixA->clearContents();
+    ui->tableMatrixB->clearContents();
+    ui->tableResult->clearContents();
+}
+Matrix MainWindow::readMatrixFromTable(QTableWidget* table)
+{
+    int rows = table->rowCount();
+    int cols = table->columnCount();
+
+    Matrix m(rows, cols);
+
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            auto* item = table->item(i, j);
+            double value = item ? item->text().toDouble() : 0.0;
+            m.set(i, j, value);
+        }
+    }
+
+    return m;
+}
+
+
+void MainWindow::writeMatrixToTable(QTableWidget* table, const Matrix& m)
+{
+    table->setRowCount(m.getRows());
+    table->setColumnCount(m.getCols());
+
+    for (int i = 0; i < m.getRows(); ++i) {
+        for (int j = 0; j < m.getCols(); ++j) {
+            table->setItem(
+                i, j,
+                new QTableWidgetItem(QString::number(m.get(i, j)))
+                );
+        }
+    }
+}
+
+
 

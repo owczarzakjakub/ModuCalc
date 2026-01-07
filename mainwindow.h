@@ -10,6 +10,8 @@
 #include "src/core/parser.h"
 #include "src/core/evaluator.h"
 #include "src/core/solver.h"
+#include <QTableWidget>
+#include "src/types/matrix.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -70,17 +72,23 @@ private slots:
 
     void on_ButtonX_clicked();
 
+    void on_btnAdd_clicked();
+    void on_btnSub_clicked();
+    void on_btnMul_clicked();
+    void on_btnTransposeA_clicked();
+    void on_btnClear_clicked();
+
 private:
     Ui::MainWindow *ui;
 
     HistoryManager historyManager;
     ScriptEngine engine;
     std::string currentExpression;
-
+    Matrix readMatrixFromTable(QTableWidget* table);
     Lexer lexer;
     Parser parser;
     Evaluator evaluator;
     Solver solver;
-
+    void writeMatrixToTable(QTableWidget* table, const Matrix& m);
     void appendToExpression(const QString& value);
 };

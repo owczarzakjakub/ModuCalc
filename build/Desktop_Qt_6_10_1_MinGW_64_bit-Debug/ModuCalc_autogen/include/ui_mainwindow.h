@@ -11,11 +11,14 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -47,7 +50,6 @@ public:
     QPushButton *ButtonAsin;
     QPushButton *ButtonAcos;
     QPushButton *ButtonAtan;
-    QPushButton *ButtonActg;
     QPushButton *ButtonLog;
     QPushButton *ButtonSqrt;
     QPushButton *ButtonLParen;
@@ -61,6 +63,16 @@ public:
     QPushButton *ButtonX;
     QPushButton *ButtonRownaSie;
     QStatusBar *statusbar_2;
+    QSpinBox *spinRows;
+    QSpinBox *spinCols;
+    QTableWidget *tableMatrixA;
+    QTableWidget *tableMatrixB;
+    QTableWidget *tableResult;
+    QPushButton *btnAdd;
+    QPushButton *btnMul;
+    QPushButton *pushButton_3;
+    QPushButton *btnSub;
+    QPushButton *pushButton_5;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -68,12 +80,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(369, 516);
+        MainWindow->resize(1310, 540);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         centralwidget_2 = new QWidget(centralwidget);
         centralwidget_2->setObjectName("centralwidget_2");
-        centralwidget_2->setGeometry(QRect(0, 0, 361, 491));
+        centralwidget_2->setGeometry(QRect(0, 20, 361, 491));
         lineEditDisplay = new QLineEdit(centralwidget_2);
         lineEditDisplay->setObjectName("lineEditDisplay");
         lineEditDisplay->setGeometry(QRect(10, 30, 351, 131));
@@ -142,9 +154,6 @@ public:
         ButtonAtan = new QPushButton(centralwidget_2);
         ButtonAtan->setObjectName("ButtonAtan");
         ButtonAtan->setGeometry(QRect(190, 220, 80, 24));
-        ButtonActg = new QPushButton(centralwidget_2);
-        ButtonActg->setObjectName("ButtonActg");
-        ButtonActg->setGeometry(QRect(280, 220, 80, 24));
         ButtonLog = new QPushButton(centralwidget_2);
         ButtonLog->setObjectName("ButtonLog");
         ButtonLog->setGeometry(QRect(10, 250, 80, 24));
@@ -184,10 +193,43 @@ public:
         statusbar_2 = new QStatusBar(centralwidget);
         statusbar_2->setObjectName("statusbar_2");
         statusbar_2->setGeometry(QRect(330, 220, 3, 22));
+        spinRows = new QSpinBox(centralwidget);
+        spinRows->setObjectName("spinRows");
+        spinRows->setEnabled(true);
+        spinRows->setGeometry(QRect(720, 240, 42, 25));
+        spinRows->setValue(2);
+        spinCols = new QSpinBox(centralwidget);
+        spinCols->setObjectName("spinCols");
+        spinCols->setGeometry(QRect(1000, 240, 42, 25));
+        spinCols->setValue(2);
+        tableMatrixA = new QTableWidget(centralwidget);
+        tableMatrixA->setObjectName("tableMatrixA");
+        tableMatrixA->setGeometry(QRect(460, 30, 256, 192));
+        tableMatrixB = new QTableWidget(centralwidget);
+        tableMatrixB->setObjectName("tableMatrixB");
+        tableMatrixB->setGeometry(QRect(750, 30, 256, 192));
+        tableResult = new QTableWidget(centralwidget);
+        tableResult->setObjectName("tableResult");
+        tableResult->setGeometry(QRect(1030, 30, 256, 192));
+        btnAdd = new QPushButton(centralwidget);
+        btnAdd->setObjectName("btnAdd");
+        btnAdd->setGeometry(QRect(520, 280, 80, 24));
+        btnMul = new QPushButton(centralwidget);
+        btnMul->setObjectName("btnMul");
+        btnMul->setGeometry(QRect(700, 280, 80, 24));
+        pushButton_3 = new QPushButton(centralwidget);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(890, 280, 80, 24));
+        btnSub = new QPushButton(centralwidget);
+        btnSub->setObjectName("btnSub");
+        btnSub->setGeometry(QRect(610, 280, 80, 24));
+        pushButton_5 = new QPushButton(centralwidget);
+        pushButton_5->setObjectName("pushButton_5");
+        pushButton_5->setGeometry(QRect(790, 280, 91, 24));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 369, 21));
+        menubar->setGeometry(QRect(0, 0, 1310, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -222,7 +264,6 @@ public:
         ButtonAsin->setText(QCoreApplication::translate("MainWindow", "asin", nullptr));
         ButtonAcos->setText(QCoreApplication::translate("MainWindow", "acos", nullptr));
         ButtonAtan->setText(QCoreApplication::translate("MainWindow", "atan", nullptr));
-        ButtonActg->setText(QCoreApplication::translate("MainWindow", "actg", nullptr));
         ButtonLog->setText(QCoreApplication::translate("MainWindow", "log", nullptr));
         ButtonSqrt->setText(QCoreApplication::translate("MainWindow", "sqrt", nullptr));
         ButtonLParen->setText(QCoreApplication::translate("MainWindow", "(", nullptr));
@@ -235,6 +276,11 @@ public:
         Button2->setText(QCoreApplication::translate("MainWindow", "2", nullptr));
         ButtonX->setText(QCoreApplication::translate("MainWindow", "X", nullptr));
         ButtonRownaSie->setText(QCoreApplication::translate("MainWindow", "=", nullptr));
+        btnAdd->setText(QCoreApplication::translate("MainWindow", "A+B", nullptr));
+        btnMul->setText(QCoreApplication::translate("MainWindow", "A*B", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Clear", nullptr));
+        btnSub->setText(QCoreApplication::translate("MainWindow", "A-B", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "TransposeA", nullptr));
     } // retranslateUi
 
 };

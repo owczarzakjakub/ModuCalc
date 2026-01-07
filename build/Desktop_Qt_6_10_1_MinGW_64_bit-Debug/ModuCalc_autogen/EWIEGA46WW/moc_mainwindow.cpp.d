@@ -9,6 +9,7 @@ C:/Users/piotr/OneDrive/Pulpit/kolon/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/QT/6.10.1/mingw_64/include/QtCore/q20utility.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/q23type_traits.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/q23utility.h \
+  C:/QT/6.10.1/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qalloc.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qanystringview.h \
@@ -52,11 +53,13 @@ C:/Users/piotr/OneDrive/Pulpit/kolon/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/QT/6.10.1/mingw_64/include/QtCore/qhash.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qhashfunctions.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qiodevicebase.h \
+  C:/QT/6.10.1/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qiterable.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qiterator.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qlatin1stringview.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qline.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qlist.h \
+  C:/QT/6.10.1/mingw_64/include/QtCore/qlocale.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qlogging.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qmalloc.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qmap.h \
@@ -77,6 +80,7 @@ C:/Users/piotr/OneDrive/Pulpit/kolon/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/QT/6.10.1/mingw_64/include/QtCore/qprocessordetection.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qrect.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qrefcount.h \
+  C:/QT/6.10.1/mingw_64/include/QtCore/qregularexpression.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qscopedpointer.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qscopeguard.h \
   C:/QT/6.10.1/mingw_64/include/QtCore/qset.h \
@@ -152,15 +156,30 @@ C:/Users/piotr/OneDrive/Pulpit/kolon/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/QT/6.10.1/mingw_64/include/QtGui/qtguiexports.h \
   C:/QT/6.10.1/mingw_64/include/QtGui/qtguiglobal.h \
   C:/QT/6.10.1/mingw_64/include/QtGui/qtransform.h \
+  C:/QT/6.10.1/mingw_64/include/QtGui/qvalidator.h \
   C:/QT/6.10.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/QT/6.10.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/QMessageBox \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/QTableWidget \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qabstractslider.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qdialog.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qframe.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qmessagebox.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qrubberband.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qslider.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qstyle.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qstyleoption.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qtabbar.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qtableview.h \
+  C:/QT/6.10.1/mingw_64/include/QtWidgets/qtablewidget.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/QT/6.10.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -403,4 +422,7 @@ C:/Users/piotr/OneDrive/Pulpit/kolon/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
   C:/Users/piotr/OneDrive/Pulpit/kolon/src/core/token.h \
   C:/Users/piotr/OneDrive/Pulpit/kolon/src/history/historymanager.h \
   C:/Users/piotr/OneDrive/Pulpit/kolon/src/history/scriptengine.h \
-  C:/Users/piotr/OneDrive/Pulpit/kolon/src/types/number.h
+  C:/Users/piotr/OneDrive/Pulpit/kolon/src/modules/trigonometry.h \
+  C:/Users/piotr/OneDrive/Pulpit/kolon/src/types/matrix.h \
+  C:/Users/piotr/OneDrive/Pulpit/kolon/src/types/number.h \
+  C:/Users/piotr/OneDrive/Pulpit/kolon/src/types/vector.h
