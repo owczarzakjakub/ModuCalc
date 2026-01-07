@@ -47,6 +47,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         src/types/vector.h src/types/vector.cpp
         src/types/matrix.h src/types/matrix.cpp
         src/core/TokenType.h
+        src/core/solver.h src/core/solver.cpp
 
 
     )
