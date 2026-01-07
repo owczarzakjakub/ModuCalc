@@ -26,7 +26,11 @@
 	"objects" : 
 	[
 		{
+<<<<<<<< HEAD:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-11T20-44-05-0055.json
+			"jsonFile" : "codemodel-v2-8407b61792f09547b8a0.json",
+========
 			"jsonFile" : "codemodel-v2-5b5108b1d9bc822f000b.json",
+>>>>>>>> 40dc6bfd5539af2f7daaacdf7a49ff50cf5ecb58:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-20T11-38-56-0292.json
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -77,7 +81,11 @@
 		},
 		"codemodel-v2" : 
 		{
+<<<<<<<< HEAD:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-11T20-44-05-0055.json
+			"jsonFile" : "codemodel-v2-8407b61792f09547b8a0.json",
+========
 			"jsonFile" : "codemodel-v2-5b5108b1d9bc822f000b.json",
+>>>>>>>> 40dc6bfd5539af2f7daaacdf7a49ff50cf5ecb58:build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-12-20T11-38-56-0292.json
 			"kind" : "codemodel",
 			"version" : 
 			{
