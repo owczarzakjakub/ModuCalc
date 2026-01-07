@@ -35,9 +35,11 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
+
+
     //tokenizer test
     Lexer lex = Lexer();
-    vector<Token> tokens = lex.tokenize("(3+4)*5-(7/(3+sin(2)))");
+    vector<Token> tokens = lex.tokenize("(3+4)*5-(7/(3+sin(x)))");
     for (const Token &t : tokens) {
         cout << t.value;
         cout<<" - Precedence: ";
