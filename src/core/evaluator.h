@@ -7,5 +7,7 @@ class Evaluator
 public:
     Evaluator();
     Number evaluate(const std::vector<Token>& postifix);
+    double EquationWithOneVariable(const std::vector<Token>& tokens,const std::string& variableName="x");
+
 };
 
