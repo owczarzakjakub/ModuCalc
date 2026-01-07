@@ -1,6 +1,8 @@
-#include "TokenType.h"
-#include <iostream>
 #pragma once
+#include "TokenType.h"
+#include <string>
+#include <iostream>
+
 
 class Token
 {
