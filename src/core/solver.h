@@ -2,6 +2,7 @@
 #define SOLVER_H
 #include <vector>
 #include "token.h"
+#include "../modules/trigonometry.h"
 #include "../types/number.h"
 struct SymbolicNumber{
     double coefX;
@@ -14,6 +15,8 @@ class Solver
 public:
     Solver();
     SymbolicNumber solve(const std::vector<Token>& postfix);
+private:
+    Trigonometry trig;
 };
 
 #endif // SOLVER_H
