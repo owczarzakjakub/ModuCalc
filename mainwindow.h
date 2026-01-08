@@ -32,9 +32,9 @@ private slots:
     void on_Button0_clicked();
     void on_Button1_clicked();
     void on_Button2_clicked();
-    void on_Button3_clicked(); // Uwaga: To jest cyfra 3, nie mylić z Clear (pushButton_3)
+    void on_Button3_clicked();
     void on_Button4_clicked();
-    void on_Button5_clicked(); // Uwaga: To jest cyfra 5
+    void on_Button5_clicked();
     void on_Button6_clicked();
     void on_Button7_clicked();
     void on_Button8_clicked();
@@ -46,7 +46,7 @@ private slots:
     void on_ButtonDivide_clicked();
     void on_ButtonDot_clicked();
     void on_ButtonEqual_clicked();
-    void on_ButtonClear_clicked(); // To jest 'C' kalkulatora
+    void on_ButtonClear_clicked();
 
     void on_ButtonLParen_clicked();
     void on_ButtonRParen_clicked();
@@ -56,7 +56,7 @@ private slots:
     void on_ButtonRownaSie_clicked();
     void on_ButtonX_clicked();
 
-    // Funkcje trygonometryczne
+
     void on_ButtonSin_clicked();
     void on_ButtonCos_clicked();
     void on_ButtonTan_clicked();
@@ -68,14 +68,14 @@ private slots:
     void on_ButtonLog_clicked();
     void on_ButtonSqrt_clicked();
 
-    // --- MACIERZE (Zgodne z Twoim UI) ---
+
     void on_btnAdd_clicked();
     void on_btnSub_clicked();
     void on_btnMul_clicked();
 
-    // UI nazwało te przyciski automatycznie:
-    void on_pushButton_5_clicked(); // To jest TransposeA
-    void on_pushButton_3_clicked(); // To jest Clear Macierzy
+
+    void on_pushButton_5_clicked();
+    void on_pushButton_3_clicked();
 
     void on_spinRowsA_valueChanged(int arg1);
     void on_spinColsA_valueChanged(int arg1);
@@ -96,9 +96,9 @@ private:
     Evaluator evaluator;
     Solver solver;
 
-    // Metody pomocnicze
+
     void appendToExpression(const QString& value);
-    void setupMatrixTables(); // Konfiguracja początkowa tabel
+    void setupMatrixTables();
     Matrix readMatrixFromTable(QTableWidget* table);
     void writeMatrixToTable(QTableWidget* table, const Matrix& m);
 };
