@@ -53,6 +53,8 @@ SymbolicNumber Solver::solve(const std::vector<Token>& postfix){
             else if(token.value=="asin") res=trig.asin(v);
             else if(token.value=="acos") res=trig.acos(v);
             else if(token.value=="atan") res=trig.atan(v);
+            else if(token.value=="sqrt") res=sqrt(v);
+            else if(token.value=="log") res=log10(v);
             else throw std::logic_error("Nieznana funkcja");
             stack.push(SymbolicNumber(0,res));
             }

@@ -36,7 +36,7 @@ Number Evaluator::evaluate(const std::vector<Token>& postfix){
             else if(token.value=="atan") stack.push(Number(trig.atan(a.toDouble())));
 
             else if(token.value=="sqrt") stack.push(Number(std::sqrt(a.toDouble())));
-            else if(token.value=="log") stack.push(Number(std::log(a.toDouble())));
+            else if(token.value=="log") stack.push(Number(std::log10(a.toDouble())));
             else throw std::logic_error("Nieznana funkcja");
         }
         else{
