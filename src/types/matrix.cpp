@@ -41,18 +41,17 @@ Matrix Matrix::sub(const Matrix& m) const{
 }
 
 Matrix Matrix::multi(const Matrix& m) const{
-    // Warunek mnożenia: liczba kolumn A musi równać się liczbie wierszy B
+
     if(cols != m.rows) throw std::logic_error("Zły rozmiar macierzy do mnożenia");
 
     Matrix result(rows, m.cols);
 
-    // Inicjalizacja zerami jest robiona w konstruktorze Matrix, ale dla pewności:
-    // Algorytm: C[i][j] = suma(A[i][k] * B[k][j])
+
     for(int i=0; i<rows; i++){
         for(int j=0; j<m.cols; j++){
             double sum = 0.0;
             for(int k=0; k<cols; k++){
-                sum += data[i][k] * m.data[k][j]; // Tu był błąd! Musi być +=
+                sum += data[i][k] * m.data[k][j];
             }
             result.data[i][j] = sum;
         }

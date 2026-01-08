@@ -28,7 +28,6 @@ public:
     double calculateExpression(const QString &expr, bool &hasVariable, double xValue = 0);
 
 private slots:
-    // Kalkulator
     void on_Button0_clicked();
     void on_Button1_clicked();
     void on_Button2_clicked();

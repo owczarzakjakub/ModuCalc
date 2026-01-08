@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Inicjalizacja tabel macierzy (ustawiamy domyślnie 3x3)
+
     setupMatrixTables();
 }
 
@@ -21,10 +21,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// --- FUNKCJE POMOCNICZE MACIERZY ---
+
 
 void MainWindow::setupMatrixTables() {
-    // Ustawiamy domyślny rozmiar, aby użytkownik widział siatkę
+
     ui->tableMatrixA->setRowCount(3);
     ui->tableMatrixA->setColumnCount(3);
 
@@ -34,7 +34,7 @@ void MainWindow::setupMatrixTables() {
     ui->tableResult->setRowCount(3);
     ui->tableResult->setColumnCount(3);
 
-    // Opcjonalnie nagłówki kolumn
+
     QStringList labels = {"1", "2", "3"};
     ui->tableMatrixA->setHorizontalHeaderLabels(labels);
     ui->tableMatrixB->setHorizontalHeaderLabels(labels);
@@ -77,9 +77,9 @@ void MainWindow::writeMatrixToTable(QTableWidget* table, const Matrix& m)
     }
 }
 
-// --- SLOTY MACIERZY ---
 
-// --- DODAWANIE ---
+
+
 void MainWindow::on_btnAdd_clicked() {
     if (ui->spinRowsA->value() != ui->spinRowsB->value() ||
         ui->spinColsA->value() != ui->spinColsB->value()) {
@@ -93,7 +93,7 @@ void MainWindow::on_btnAdd_clicked() {
     } catch (const std::exception &e) { QMessageBox::warning(this, "Błąd", e.what()); }
 }
 
-// --- ODEJMOWANIE ---
+
 void MainWindow::on_btnSub_clicked() {
     if (ui->spinRowsA->value() != ui->spinRowsB->value() ||
         ui->spinColsA->value() != ui->spinColsB->value()) {
@@ -107,9 +107,9 @@ void MainWindow::on_btnSub_clicked() {
     } catch (const std::exception &e) { QMessageBox::warning(this, "Błąd", e.what()); }
 }
 
-// --- MNOŻENIE ---
+
 void MainWindow::on_btnMul_clicked() {
-    // Warunek mnożenia: Kolumny A == Wiersze B
+
     if (ui->spinColsA->value() != ui->spinRowsB->value()) {
         QMessageBox::warning(this, "Błąd wymiarów",
                              "Liczba kolumn macierzy A musi być równa liczbie wierszy macierzy B!");
@@ -123,7 +123,7 @@ void MainWindow::on_btnMul_clicked() {
     } catch (const std::exception &e) { QMessageBox::warning(this, "Błąd", e.what()); }
 }
 
-// Przycisk TransposeA
+
 void MainWindow::on_pushButton_5_clicked() {
     try {
         Matrix A = readMatrixFromTable(ui->tableMatrixA);
@@ -134,19 +134,19 @@ void MainWindow::on_pushButton_5_clicked() {
     }
 }
 
-// Przycisk Clear
+
 void MainWindow::on_pushButton_3_clicked() {
     ui->tableMatrixA->clearContents();
     ui->tableMatrixB->clearContents();
     ui->tableResult->clearContents();
 
-    // Reset wymiarów do 3x3
+
     ui->tableMatrixA->setRowCount(3); ui->tableMatrixA->setColumnCount(3);
     ui->tableMatrixB->setRowCount(3); ui->tableMatrixB->setColumnCount(3);
     ui->tableResult->setRowCount(3); ui->tableResult->setColumnCount(3);
 }
 
-// --- SLOTY KALKULATORA STANDARDOWEGO ---
+
 
 void MainWindow::appendToExpression(const QString& value)
 {
@@ -186,7 +186,7 @@ void MainWindow::on_ButtonLog_clicked()   { appendToExpression("log("); }
 void MainWindow::on_ButtonSqrt_clicked()  { appendToExpression("sqrt("); }
 
 
-// ButtonClear to 'C' kalkulatora
+
 void MainWindow::on_ButtonClear_clicked()
 {
     currentExpression.clear();
@@ -277,7 +277,7 @@ void MainWindow::on_ButtonX_clicked()
 {
     appendToExpression("x");
 }
-// Zmiana rozmiaru Macierzy A
+
 void MainWindow::on_spinRowsA_valueChanged(int arg1) {
     ui->tableMatrixA->setRowCount(arg1);
 }
@@ -286,7 +286,6 @@ void MainWindow::on_spinColsA_valueChanged(int arg1) {
     ui->tableMatrixA->setColumnCount(arg1);
 }
 
-// Zmiana rozmiaru Macierzy B
 void MainWindow::on_spinRowsB_valueChanged(int arg1) {
     ui->tableMatrixB->setRowCount(arg1);
 }
