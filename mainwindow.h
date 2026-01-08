@@ -77,6 +77,13 @@ private slots:
     void on_pushButton_5_clicked(); // To jest TransposeA
     void on_pushButton_3_clicked(); // To jest Clear Macierzy
 
+    void on_spinRowsA_valueChanged(int arg1);
+    void on_spinColsA_valueChanged(int arg1);
+    void on_spinRowsB_valueChanged(int arg1);
+    void on_spinColsB_valueChanged(int arg1);
+
+    void on_ButtonTransposeB_clicked();
+
 private:
     Ui::MainWindow *ui;
 

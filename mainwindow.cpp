@@ -79,40 +79,51 @@ void MainWindow::writeMatrixToTable(QTableWidget* table, const Matrix& m)
 
 // --- SLOTY MACIERZY ---
 
+// --- DODAWANIE ---
 void MainWindow::on_btnAdd_clicked() {
+    if (ui->spinRowsA->value() != ui->spinRowsB->value() ||
+        ui->spinColsA->value() != ui->spinColsB->value()) {
+        QMessageBox::warning(this, "Błąd", "Do dodawania macierze muszą mieć te same wymiary!");
+        return;
+    }
     try {
         Matrix A = readMatrixFromTable(ui->tableMatrixA);
         Matrix B = readMatrixFromTable(ui->tableMatrixB);
-        Matrix result = A.add(B);
-        writeMatrixToTable(ui->tableResult, result);
-    } catch (const std::exception &e) {
-        QMessageBox::warning(this, "Błąd", e.what());
-    }
+        writeMatrixToTable(ui->tableResult, A.add(B));
+    } catch (const std::exception &e) { QMessageBox::warning(this, "Błąd", e.what()); }
 }
 
+// --- ODEJMOWANIE ---
 void MainWindow::on_btnSub_clicked() {
+    if (ui->spinRowsA->value() != ui->spinRowsB->value() ||
+        ui->spinColsA->value() != ui->spinColsB->value()) {
+        QMessageBox::warning(this, "Błąd", "Do odejmowania macierze muszą mieć te same wymiary!");
+        return;
+    }
     try {
         Matrix A = readMatrixFromTable(ui->tableMatrixA);
         Matrix B = readMatrixFromTable(ui->tableMatrixB);
-        Matrix result = A.sub(B);
-        writeMatrixToTable(ui->tableResult, result);
-    } catch (const std::exception &e) {
-        QMessageBox::warning(this, "Błąd", e.what());
-    }
+        writeMatrixToTable(ui->tableResult, A.sub(B));
+    } catch (const std::exception &e) { QMessageBox::warning(this, "Błąd", e.what()); }
 }
 
+// --- MNOŻENIE ---
 void MainWindow::on_btnMul_clicked() {
+    // Warunek mnożenia: Kolumny A == Wiersze B
+    if (ui->spinColsA->value() != ui->spinRowsB->value()) {
+        QMessageBox::warning(this, "Błąd wymiarów",
+                             "Liczba kolumn macierzy A musi być równa liczbie wierszy macierzy B!");
+        return;
+    }
+
     try {
         Matrix A = readMatrixFromTable(ui->tableMatrixA);
         Matrix B = readMatrixFromTable(ui->tableMatrixB);
-        Matrix result = A.multi(B);
-        writeMatrixToTable(ui->tableResult, result);
-    } catch (const std::exception &e) {
-        QMessageBox::warning(this, "Błąd", e.what());
-    }
+        writeMatrixToTable(ui->tableResult, A.multi(B));
+    } catch (const std::exception &e) { QMessageBox::warning(this, "Błąd", e.what()); }
 }
 
-// Przycisk TransposeA (w UI nazywa się pushButton_5)
+// Przycisk TransposeA
 void MainWindow::on_pushButton_5_clicked() {
     try {
         Matrix A = readMatrixFromTable(ui->tableMatrixA);
@@ -123,7 +134,7 @@ void MainWindow::on_pushButton_5_clicked() {
     }
 }
 
-// Przycisk Clear (w UI nazywa się pushButton_3)
+// Przycisk Clear
 void MainWindow::on_pushButton_3_clicked() {
     ui->tableMatrixA->clearContents();
     ui->tableMatrixB->clearContents();
@@ -146,10 +157,8 @@ void MainWindow::appendToExpression(const QString& value)
 void MainWindow::on_Button0_clicked() { appendToExpression("0"); }
 void MainWindow::on_Button1_clicked() { appendToExpression("1"); }
 void MainWindow::on_Button2_clicked() { appendToExpression("2"); }
-// Button3 to klawisz '3' kalkulatora
 void MainWindow::on_Button3_clicked() { appendToExpression("3"); }
 void MainWindow::on_Button4_clicked() { appendToExpression("4"); }
-// Button5 to klawisz '5' kalkulatora
 void MainWindow::on_Button5_clicked() { appendToExpression("5"); }
 void MainWindow::on_Button6_clicked() { appendToExpression("6"); }
 void MainWindow::on_Button7_clicked() { appendToExpression("7"); }
@@ -175,6 +184,7 @@ void MainWindow::on_ButtonAtan_clicked()  { appendToExpression("atan("); }
 void MainWindow::on_ButtonActg_clicked()  { appendToExpression("actg("); }
 void MainWindow::on_ButtonLog_clicked()   { appendToExpression("log("); }
 void MainWindow::on_ButtonSqrt_clicked()  { appendToExpression("sqrt("); }
+
 
 // ButtonClear to 'C' kalkulatora
 void MainWindow::on_ButtonClear_clicked()
@@ -267,3 +277,32 @@ void MainWindow::on_ButtonX_clicked()
 {
     appendToExpression("x");
 }
+// Zmiana rozmiaru Macierzy A
+void MainWindow::on_spinRowsA_valueChanged(int arg1) {
+    ui->tableMatrixA->setRowCount(arg1);
+}
+
+void MainWindow::on_spinColsA_valueChanged(int arg1) {
+    ui->tableMatrixA->setColumnCount(arg1);
+}
+
+// Zmiana rozmiaru Macierzy B
+void MainWindow::on_spinRowsB_valueChanged(int arg1) {
+    ui->tableMatrixB->setRowCount(arg1);
+}
+
+void MainWindow::on_spinColsB_valueChanged(int arg1) {
+    ui->tableMatrixB->setColumnCount(arg1);
+}
+
+void MainWindow::on_ButtonTransposeB_clicked()
+{
+    try {
+        Matrix B = readMatrixFromTable(ui->tableMatrixB);
+        Matrix result = B.transpose();
+        writeMatrixToTable(ui->tableResult, result);
+    } catch (const std::exception &e) {
+        QMessageBox::warning(this, "Błąd", e.what());
+    }
+}
+

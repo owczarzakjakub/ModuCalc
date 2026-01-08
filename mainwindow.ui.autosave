@@ -589,6 +589,9 @@
     <property name="alignment">
      <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
@@ -605,6 +608,9 @@
     <property name="alignment">
      <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
@@ -620,6 +626,9 @@
     </property>
     <property name="alignment">
      <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QSpinBox" name="spinRowsA">
@@ -638,7 +647,7 @@
    <widget class="QSpinBox" name="spinColsA">
     <property name="geometry">
      <rect>
-      <x>610</x>
+      <x>600</x>
       <y>340</y>
       <width>42</width>
       <height>25</height>
@@ -664,7 +673,7 @@
    <widget class="QSpinBox" name="spinColsB">
     <property name="geometry">
      <rect>
-      <x>790</x>
+      <x>780</x>
       <y>340</y>
       <width>42</width>
       <height>25</height>
@@ -685,6 +694,44 @@
     </property>
     <property name="text">
      <string>TransposeB</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>310</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DimensionsA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>310</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DimensionsB</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
