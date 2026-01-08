@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QString>
 #include <QMessageBox>
+#include <QTableWidget>
 #include "src/history/scriptengine.h"
 #include "historymanager.h"
 #include "src/types/number.h"
@@ -10,7 +11,6 @@
 #include "src/core/parser.h"
 #include "src/core/evaluator.h"
 #include "src/core/solver.h"
-#include <QTableWidget>
 #include "src/types/matrix.h"
 
 QT_BEGIN_NAMESPACE
@@ -28,12 +28,13 @@ public:
     double calculateExpression(const QString &expr, bool &hasVariable, double xValue = 0);
 
 private slots:
+    // Kalkulator
     void on_Button0_clicked();
     void on_Button1_clicked();
     void on_Button2_clicked();
-    void on_Button3_clicked();
+    void on_Button3_clicked(); // Uwaga: To jest cyfra 3, nie mylić z Clear (pushButton_3)
     void on_Button4_clicked();
-    void on_Button5_clicked();
+    void on_Button5_clicked(); // Uwaga: To jest cyfra 5
     void on_Button6_clicked();
     void on_Button7_clicked();
     void on_Button8_clicked();
@@ -44,39 +45,37 @@ private slots:
     void on_ButtonMultiply_clicked();
     void on_ButtonDivide_clicked();
     void on_ButtonDot_clicked();
-
     void on_ButtonEqual_clicked();
-    void on_ButtonClear_clicked();
+    void on_ButtonClear_clicked(); // To jest 'C' kalkulatora
 
     void on_ButtonLParen_clicked();
     void on_ButtonRParen_clicked();
+    void on_ButtonPower_clicked();
+    void on_ButtonDel_clicked();
+    void on_ButtonAns_clicked();
+    void on_ButtonRownaSie_clicked();
+    void on_ButtonX_clicked();
 
+    // Funkcje trygonometryczne
     void on_ButtonSin_clicked();
     void on_ButtonCos_clicked();
     void on_ButtonTan_clicked();
     void on_ButtonCtg_clicked();
-
     void on_ButtonAsin_clicked();
     void on_ButtonAcos_clicked();
     void on_ButtonAtan_clicked();
     void on_ButtonActg_clicked();
-
     void on_ButtonLog_clicked();
     void on_ButtonSqrt_clicked();
 
-    void on_ButtonPower_clicked();
-    void on_ButtonDel_clicked();
-    void on_ButtonAns_clicked();
-
-    void on_ButtonRownaSie_clicked();
-
-    void on_ButtonX_clicked();
-
+    // --- MACIERZE (Zgodne z Twoim UI) ---
     void on_btnAdd_clicked();
     void on_btnSub_clicked();
     void on_btnMul_clicked();
-    void on_btnTransposeA_clicked();
-    void on_btnClear_clicked();
+
+    // UI nazwało te przyciski automatycznie:
+    void on_pushButton_5_clicked(); // To jest TransposeA
+    void on_pushButton_3_clicked(); // To jest Clear Macierzy
 
 private:
     Ui::MainWindow *ui;
@@ -84,11 +83,15 @@ private:
     HistoryManager historyManager;
     ScriptEngine engine;
     std::string currentExpression;
-    Matrix readMatrixFromTable(QTableWidget* table);
+
     Lexer lexer;
     Parser parser;
     Evaluator evaluator;
     Solver solver;
-    void writeMatrixToTable(QTableWidget* table, const Matrix& m);
+
+    // Metody pomocnicze
     void appendToExpression(const QString& value);
+    void setupMatrixTables(); // Konfiguracja początkowa tabel
+    Matrix readMatrixFromTable(QTableWidget* table);
+    void writeMatrixToTable(QTableWidget* table, const Matrix& m);
 };

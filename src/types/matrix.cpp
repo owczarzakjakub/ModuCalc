@@ -1,15 +1,17 @@
 #include "matrix.h"
 #include <stdexcept>
-
+#include <vector>
 
 Matrix::Matrix(int r,int c):rows(r), cols(c) {
     data.resize(r,std::vector<double>(c,0.0));
 }
 
-
 Matrix::Matrix(const std::vector<std::vector<double>>& d) {
     rows=d.size();
-    cols=d[0].size();
+    if (rows > 0)
+        cols=d[0].size();
+    else
+        cols = 0;
     data=d;
 }
 
@@ -17,7 +19,7 @@ int Matrix::getRows() const{return rows;}
 int Matrix::getCols() const{return cols;}
 
 Matrix Matrix::add(const Matrix& m) const{
-    if(rows!=m.rows || cols!=m.cols) throw std::logic_error("Zły rozmiar macierzy");
+    if(rows!=m.rows || cols!=m.cols) throw std::logic_error("Zły rozmiar macierzy do dodawania");
     Matrix result(rows,cols);
     for(int i=0;i<rows;i++){
         for(int j=0;j<cols;j++){
@@ -28,7 +30,7 @@ Matrix Matrix::add(const Matrix& m) const{
 }
 
 Matrix Matrix::sub(const Matrix& m) const{
-    if(rows!=m.rows || cols!=m.cols) throw std::logic_error("Zły rozmiar macierzy");
+    if(rows!=m.rows || cols!=m.cols) throw std::logic_error("Zły rozmiar macierzy do odejmowania");
     Matrix result(rows,cols);
     for(int i=0;i<rows;i++){
         for(int j=0;j<cols;j++){
@@ -39,17 +41,25 @@ Matrix Matrix::sub(const Matrix& m) const{
 }
 
 Matrix Matrix::multi(const Matrix& m) const{
-    if(rows!=m.rows || cols!=m.cols) throw std::logic_error("Zły rozmiar macierzy");
-    Matrix result(rows,cols);
-    for(int i=0;i<rows;i++){
-        for(int j=0;j<cols;j++){
-            for(int k=0;k<cols;k++){
-                result.data[i][j]=data[i][k]*m.data[k][j];
+    // Warunek mnożenia: liczba kolumn A musi równać się liczbie wierszy B
+    if(cols != m.rows) throw std::logic_error("Zły rozmiar macierzy do mnożenia");
+
+    Matrix result(rows, m.cols);
+
+    // Inicjalizacja zerami jest robiona w konstruktorze Matrix, ale dla pewności:
+    // Algorytm: C[i][j] = suma(A[i][k] * B[k][j])
+    for(int i=0; i<rows; i++){
+        for(int j=0; j<m.cols; j++){
+            double sum = 0.0;
+            for(int k=0; k<cols; k++){
+                sum += data[i][k] * m.data[k][j]; // Tu był błąd! Musi być +=
             }
+            result.data[i][j] = sum;
         }
     }
     return result;
 }
+
 Matrix Matrix::transpose() const{
     Matrix result(cols,rows);
     for(int i=0;i<rows;i++){
@@ -61,22 +71,30 @@ Matrix Matrix::transpose() const{
 }
 
 std::vector<double> Matrix::row(int r) const{
-    return data[r];
+    if (r >= 0 && r < rows) return data[r];
+    return {};
 }
+
 std::vector<double> Matrix::col(int c) const{
-    std::vector<double> result(rows);
-    for(int i=0;i<rows;i++){
-        result[i]=data[i][c];
+    std::vector<double> result;
+    if (c >= 0 && c < cols) {
+        result.resize(rows);
+        for(int i=0;i<rows;i++){
+            result[i]=data[i][c];
+        }
     }
     return result;
 }
+
 double Matrix::get(int r, int c) const
 {
-    return data[r][c];
+    if (r >= 0 && r < rows && c >= 0 && c < cols)
+        return data[r][c];
+    return 0.0;
 }
 
 void Matrix::set(int r, int c, double value)
 {
-    data[r][c] = value;
+    if (r >= 0 && r < rows && c >= 0 && c < cols)
+        data[r][c] = value;
 }
-

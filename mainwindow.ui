@@ -479,35 +479,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinRows">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>720</x>
-      <y>240</y>
-      <width>42</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>2</number>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinCols">
-    <property name="geometry">
-     <rect>
-      <x>1000</x>
-      <y>240</y>
-      <width>42</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>2</number>
-    </property>
-   </widget>
    <widget class="QTableWidget" name="tableMatrixA">
     <property name="geometry">
      <rect>
