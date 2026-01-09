@@ -7,6 +7,7 @@ file(GLOB_RECURSE CORE_SOURCES "src/core/core_placeholder.cpp" "src/core/core_pl
 file(GLOB_RECURSE HISTORY_SOURCES "src/history//history_placeholder.cpp" "src/history//history_placeholder.h")
 file(GLOB_RECURSE MODULES_SOURCES "src/modules/modules_placeholder.cpp" "src/modules/modules_placeholder.h")
 file(GLOB_RECURSE TYPES_SOURCES "src/types/types_placeholder.cpp" "src/types/types_placeholder.h")
+file(GLOB_RECURSE OCR_SOURCES "src/ocr/OCRReader.cpp" "src/ocr/OCRReader.h")
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -28,6 +29,7 @@ set(PROJECT_SOURCES
         ${HISTORY_SOURCES}
         ${TYPES_SOURCES}
         ${MODULES_SOURCES}
+        ${OCR_SOURCES}
 
 )
 
@@ -48,6 +50,13 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         src/types/matrix.h src/types/matrix.cpp
         src/core/TokenType.h
         src/core/solver.h src/core/solver.cpp
+<<<<<<< HEAD
+=======
+        src/ocr/OCRReader.h src/ocr/OCRReader.cpp
+        src/core/expression_utils.h src/core/expression_utils.cpp
+
+
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
     )
 
     target_link_libraries(ModuCalc

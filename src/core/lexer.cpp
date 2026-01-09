@@ -46,7 +46,7 @@ vector<Token> Lexer::tokenize(string input){
 
         else if(std::isalpha(input[i])){
             std::unordered_set<string> functions = {
-                "sin", "cos", "tg", "ctg", "asin", "acos", "atan", "actg", "log", "sqrt", "max"
+                "sin", "cos", "tan", "ctg", "asin", "acos", "atan", "actg", "log", "sqrt", "max"
             };
             string functionName;
             int j = i;

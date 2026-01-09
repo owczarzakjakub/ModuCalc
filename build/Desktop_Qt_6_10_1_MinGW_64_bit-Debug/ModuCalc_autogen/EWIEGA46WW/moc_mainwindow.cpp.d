@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/User/Documents/MyProjectsRepos/ModuCalc/mainwindow.h \
   C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/moc_predefs.h \
+=======
+C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/mainwindow.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/moc_predefs.h \
+  C:/Qt/6.10.1/mingw_64/include/QtCore/QObject \
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
   C:/Qt/6.10.1/mingw_64/include/QtCore/QString \
   C:/Qt/6.10.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/q20functional.h \
@@ -9,6 +15,10 @@ C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_6
   C:/Qt/6.10.1/mingw_64/include/QtCore/q20utility.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/q23type_traits.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/q23utility.h \
+<<<<<<< HEAD
+=======
+  C:/Qt/6.10.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
   C:/Qt/6.10.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qalloc.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qanystringview.h \
@@ -52,11 +62,19 @@ C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_6
   C:/Qt/6.10.1/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qhashfunctions.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qiodevicebase.h \
+<<<<<<< HEAD
+=======
+  C:/Qt/6.10.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
   C:/Qt/6.10.1/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qline.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qlist.h \
+<<<<<<< HEAD
+=======
+  C:/Qt/6.10.1/mingw_64/include/QtCore/qlocale.h \
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
   C:/Qt/6.10.1/mingw_64/include/QtCore/qlogging.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qmalloc.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qmap.h \
@@ -77,6 +95,10 @@ C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_6
   C:/Qt/6.10.1/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qrefcount.h \
+<<<<<<< HEAD
+=======
+  C:/Qt/6.10.1/mingw_64/include/QtCore/qregularexpression.h \
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
   C:/Qt/6.10.1/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/qset.h \
@@ -152,15 +174,41 @@ C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_6
   C:/Qt/6.10.1/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.10.1/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.10.1/mingw_64/include/QtGui/qtransform.h \
+<<<<<<< HEAD
+=======
+  C:/Qt/6.10.1/mingw_64/include/QtGui/qvalidator.h \
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
   C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/QMessageBox \
+<<<<<<< HEAD
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qsizepolicy.h \
+=======
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/QTableWidget \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractslider.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmessagebox.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qrubberband.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qslider.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qstyle.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qstyleoption.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtabbar.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtableview.h \
+  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtablewidget.h \
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -393,6 +441,7 @@ C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_6
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+<<<<<<< HEAD
   C:/Users/User/Documents/MyProjectsRepos/ModuCalc/historymanager.h \
   C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/TokenType.h \
   C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/core/evaluator.h \
@@ -403,3 +452,19 @@ C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_6
   C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/history/historymanager.h \
   C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/history/scriptengine.h \
   C:/Users/User/Documents/MyProjectsRepos/ModuCalc/src/types/number.h
+=======
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/historymanager.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/TokenType.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/evaluator.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/lexer.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/parser.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/solver.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/token.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/historymanager.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/scriptengine.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/trigonometry.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/ocr/OCRReader.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/matrix.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/number.h \
+  C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/vector.h
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1

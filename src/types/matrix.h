@@ -8,6 +8,10 @@ public:
 
     int getRows() const;
     int getCols() const;
+    double get(int r, int c) const;
+    void set(int r, int c, double value);
+
+
 
     Matrix add(const Matrix& m) const;
     Matrix sub(const Matrix& m) const;
@@ -16,6 +20,7 @@ public:
     Matrix transpose() const;
     std::vector<double> row(int r) const;
     std::vector<double> col(int c) const;
+
 
 private:
     std::vector<std::vector<double>> data;

@@ -59,6 +59,11 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_ButtonClear_clicked",
         "on_ButtonLParen_clicked",
         "on_ButtonRParen_clicked",
+        "on_ButtonPower_clicked",
+        "on_ButtonDel_clicked",
+        "on_ButtonAns_clicked",
+        "on_ButtonRownaSie_clicked",
+        "on_ButtonX_clicked",
         "on_ButtonSin_clicked",
         "on_ButtonCos_clicked",
         "on_ButtonTan_clicked",
@@ -69,11 +74,18 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_ButtonActg_clicked",
         "on_ButtonLog_clicked",
         "on_ButtonSqrt_clicked",
-        "on_ButtonPower_clicked",
-        "on_ButtonDel_clicked",
-        "on_ButtonAns_clicked",
-        "on_ButtonRownaSie_clicked",
-        "on_ButtonX_clicked"
+        "on_btnAdd_clicked",
+        "on_btnSub_clicked",
+        "on_btnMul_clicked",
+        "on_pushButton_5_clicked",
+        "on_pushButton_3_clicked",
+        "on_spinRowsA_valueChanged",
+        "arg1",
+        "on_spinColsA_valueChanged",
+        "on_spinRowsB_valueChanged",
+        "on_spinColsB_valueChanged",
+        "on_ButtonTransposeB_clicked",
+        "on_OCRButton_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -115,36 +127,66 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_ButtonRParen_clicked'
         QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonSin_clicked'
-        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonCos_clicked'
-        QtMocHelpers::SlotData<void()>(22, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonTan_clicked'
-        QtMocHelpers::SlotData<void()>(23, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonCtg_clicked'
-        QtMocHelpers::SlotData<void()>(24, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonAsin_clicked'
-        QtMocHelpers::SlotData<void()>(25, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonAcos_clicked'
-        QtMocHelpers::SlotData<void()>(26, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonAtan_clicked'
-        QtMocHelpers::SlotData<void()>(27, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonActg_clicked'
-        QtMocHelpers::SlotData<void()>(28, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonLog_clicked'
-        QtMocHelpers::SlotData<void()>(29, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_ButtonSqrt_clicked'
-        QtMocHelpers::SlotData<void()>(30, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_ButtonPower_clicked'
-        QtMocHelpers::SlotData<void()>(31, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_ButtonDel_clicked'
-        QtMocHelpers::SlotData<void()>(32, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(22, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_ButtonAns_clicked'
-        QtMocHelpers::SlotData<void()>(33, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(23, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_ButtonRownaSie_clicked'
-        QtMocHelpers::SlotData<void()>(34, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(24, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_ButtonX_clicked'
+        QtMocHelpers::SlotData<void()>(25, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonSin_clicked'
+        QtMocHelpers::SlotData<void()>(26, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonCos_clicked'
+        QtMocHelpers::SlotData<void()>(27, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonTan_clicked'
+        QtMocHelpers::SlotData<void()>(28, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonCtg_clicked'
+        QtMocHelpers::SlotData<void()>(29, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonAsin_clicked'
+        QtMocHelpers::SlotData<void()>(30, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonAcos_clicked'
+        QtMocHelpers::SlotData<void()>(31, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonAtan_clicked'
+        QtMocHelpers::SlotData<void()>(32, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonActg_clicked'
+        QtMocHelpers::SlotData<void()>(33, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonLog_clicked'
+        QtMocHelpers::SlotData<void()>(34, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_ButtonSqrt_clicked'
         QtMocHelpers::SlotData<void()>(35, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnAdd_clicked'
+        QtMocHelpers::SlotData<void()>(36, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnSub_clicked'
+        QtMocHelpers::SlotData<void()>(37, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnMul_clicked'
+        QtMocHelpers::SlotData<void()>(38, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_pushButton_5_clicked'
+        QtMocHelpers::SlotData<void()>(39, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_pushButton_3_clicked'
+        QtMocHelpers::SlotData<void()>(40, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_spinRowsA_valueChanged'
+        QtMocHelpers::SlotData<void(int)>(41, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 42 },
+        }}),
+        // Slot 'on_spinColsA_valueChanged'
+        QtMocHelpers::SlotData<void(int)>(43, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 42 },
+        }}),
+        // Slot 'on_spinRowsB_valueChanged'
+        QtMocHelpers::SlotData<void(int)>(44, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 42 },
+        }}),
+        // Slot 'on_spinColsB_valueChanged'
+        QtMocHelpers::SlotData<void(int)>(45, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 42 },
+        }}),
+        // Slot 'on_ButtonTransposeB_clicked'
+        QtMocHelpers::SlotData<void()>(46, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_OCRButton_clicked'
+        QtMocHelpers::SlotData<void()>(47, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -187,25 +229,35 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 16: _t->on_ButtonClear_clicked(); break;
         case 17: _t->on_ButtonLParen_clicked(); break;
         case 18: _t->on_ButtonRParen_clicked(); break;
-        case 19: _t->on_ButtonSin_clicked(); break;
-        case 20: _t->on_ButtonCos_clicked(); break;
-        case 21: _t->on_ButtonTan_clicked(); break;
-        case 22: _t->on_ButtonCtg_clicked(); break;
-        case 23: _t->on_ButtonAsin_clicked(); break;
-        case 24: _t->on_ButtonAcos_clicked(); break;
-        case 25: _t->on_ButtonAtan_clicked(); break;
-        case 26: _t->on_ButtonActg_clicked(); break;
-        case 27: _t->on_ButtonLog_clicked(); break;
-        case 28: _t->on_ButtonSqrt_clicked(); break;
-        case 29: _t->on_ButtonPower_clicked(); break;
-        case 30: _t->on_ButtonDel_clicked(); break;
-        case 31: _t->on_ButtonAns_clicked(); break;
-        case 32: _t->on_ButtonRownaSie_clicked(); break;
-        case 33: _t->on_ButtonX_clicked(); break;
+        case 19: _t->on_ButtonPower_clicked(); break;
+        case 20: _t->on_ButtonDel_clicked(); break;
+        case 21: _t->on_ButtonAns_clicked(); break;
+        case 22: _t->on_ButtonRownaSie_clicked(); break;
+        case 23: _t->on_ButtonX_clicked(); break;
+        case 24: _t->on_ButtonSin_clicked(); break;
+        case 25: _t->on_ButtonCos_clicked(); break;
+        case 26: _t->on_ButtonTan_clicked(); break;
+        case 27: _t->on_ButtonCtg_clicked(); break;
+        case 28: _t->on_ButtonAsin_clicked(); break;
+        case 29: _t->on_ButtonAcos_clicked(); break;
+        case 30: _t->on_ButtonAtan_clicked(); break;
+        case 31: _t->on_ButtonActg_clicked(); break;
+        case 32: _t->on_ButtonLog_clicked(); break;
+        case 33: _t->on_ButtonSqrt_clicked(); break;
+        case 34: _t->on_btnAdd_clicked(); break;
+        case 35: _t->on_btnSub_clicked(); break;
+        case 36: _t->on_btnMul_clicked(); break;
+        case 37: _t->on_pushButton_5_clicked(); break;
+        case 38: _t->on_pushButton_3_clicked(); break;
+        case 39: _t->on_spinRowsA_valueChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 40: _t->on_spinColsA_valueChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 41: _t->on_spinRowsB_valueChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 42: _t->on_spinColsB_valueChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 43: _t->on_ButtonTransposeB_clicked(); break;
+        case 44: _t->on_OCRButton_clicked(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const
@@ -227,14 +279,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 34)
+        if (_id < 45)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 34;
+        _id -= 45;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 34)
+        if (_id < 45)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 34;
+        _id -= 45;
     }
     return _id;
 }

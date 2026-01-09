@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 set(__QT_DEPLOY_TARGET_ModuCalc_FILE C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc.exe)
+=======
+set(__QT_DEPLOY_TARGET_ModuCalc_FILE C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc.exe)
+>>>>>>> 4c4e73d84f54dcfe673093530f82d74c9e4470b1
 set(__QT_DEPLOY_TARGET_ModuCalc_TYPE EXECUTABLE)
 set(__QT_DEPLOY_TARGET_ModuCalc_RUNTIME_DLLS C:/Qt/6.10.1/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Core.dll)

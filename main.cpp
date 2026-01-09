@@ -4,7 +4,9 @@
 #include "src/core/parser.h"
 #include "src/core/evaluator.h"
 #include "src/core/solver.h"
+#include "src/ocr/OCRReader.h"
 
+#include <QDebug>
 #include <vector>
 #include <iostream>
 #include <string>
@@ -12,7 +14,7 @@
 
 using namespace std;
 
-// Pomocnicza funkcja do wypisywania TokenType
+
 string TokenTypeToString(TokenType type){
     switch(type){
     case TokenType::NUMBER: return "NUMBER";
@@ -31,7 +33,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    // --- GUI ---
+
     MainWindow w;
     w.show();
 
@@ -55,7 +57,7 @@ int main(int argc, char *argv[])
 
     cout << "\n----- EXPRESSION TESTS -----" << endl;
 
-    // Testy obliczeń i równań
+
     bool hasVar = false;
 
     QString eq1 = "2*x + 12 = 33";

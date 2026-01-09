@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QString>
 #include <QMessageBox>
+#include <QTableWidget>
 #include "src/history/scriptengine.h"
 #include "historymanager.h"
 #include "src/types/number.h"
@@ -10,6 +11,8 @@
 #include "src/core/parser.h"
 #include "src/core/evaluator.h"
 #include "src/core/solver.h"
+#include "src/types/matrix.h"
+#include "src/ocr/OCRReader.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -42,33 +45,46 @@ private slots:
     void on_ButtonMultiply_clicked();
     void on_ButtonDivide_clicked();
     void on_ButtonDot_clicked();
-
     void on_ButtonEqual_clicked();
     void on_ButtonClear_clicked();
 
     void on_ButtonLParen_clicked();
     void on_ButtonRParen_clicked();
+    void on_ButtonPower_clicked();
+    void on_ButtonDel_clicked();
+    void on_ButtonAns_clicked();
+    void on_ButtonRownaSie_clicked();
+    void on_ButtonX_clicked();
+
 
     void on_ButtonSin_clicked();
     void on_ButtonCos_clicked();
     void on_ButtonTan_clicked();
     void on_ButtonCtg_clicked();
-
     void on_ButtonAsin_clicked();
     void on_ButtonAcos_clicked();
     void on_ButtonAtan_clicked();
     void on_ButtonActg_clicked();
-
     void on_ButtonLog_clicked();
     void on_ButtonSqrt_clicked();
 
-    void on_ButtonPower_clicked();
-    void on_ButtonDel_clicked();
-    void on_ButtonAns_clicked();
 
-    void on_ButtonRownaSie_clicked();
+    void on_btnAdd_clicked();
+    void on_btnSub_clicked();
+    void on_btnMul_clicked();
 
-    void on_ButtonX_clicked();
+
+    void on_pushButton_5_clicked();
+    void on_pushButton_3_clicked();
+
+    void on_spinRowsA_valueChanged(int arg1);
+    void on_spinColsA_valueChanged(int arg1);
+    void on_spinRowsB_valueChanged(int arg1);
+    void on_spinColsB_valueChanged(int arg1);
+
+    void on_ButtonTransposeB_clicked();
+
+    void on_OCRButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -81,6 +97,11 @@ private:
     Parser parser;
     Evaluator evaluator;
     Solver solver;
+    OCRReader ocr;
+
 
     void appendToExpression(const QString& value);
+    void setupMatrixTables();
+    Matrix readMatrixFromTable(QTableWidget* table);
+    void writeMatrixToTable(QTableWidget* table, const Matrix& m);
 };
