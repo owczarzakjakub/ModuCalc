@@ -77,5 +77,7 @@ int main(int argc, char *argv[])
     double result4 = w.calculateExpression(eq4, hasVar);
     cout << "Test 4 - Result = " << result4 << endl;
 
+
+
     return a.exec();
 }

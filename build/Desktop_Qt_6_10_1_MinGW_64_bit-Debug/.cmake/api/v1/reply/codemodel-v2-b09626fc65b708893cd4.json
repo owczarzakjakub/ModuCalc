@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9124d1ff86efec9b6c15.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ModuCalc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ModuCalc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ModuCalc-Debug-8cd3affbf367150dc0c5.json",
+					"name" : "ModuCalc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ModuCalc_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ModuCalc_autogen-Debug-732e63178c85e492f95e.json",
+					"name" : "ModuCalc_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ModuCalc_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ModuCalc_autogen_timestamp_deps-Debug-5ed9d90bb2a9a9e5d83e.json",
+					"name" : "ModuCalc_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/User/Documents/MyProjectsRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/User/Documents/MyProjectsRepos/ModuCalc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
