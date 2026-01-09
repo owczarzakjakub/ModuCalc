@@ -12,6 +12,7 @@
 #include "src/core/evaluator.h"
 #include "src/core/solver.h"
 #include "src/types/matrix.h"
+#include "src/ocr/OCRReader.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -83,6 +84,8 @@ private slots:
 
     void on_ButtonTransposeB_clicked();
 
+    void on_OCRButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 
@@ -94,6 +97,7 @@ private:
     Parser parser;
     Evaluator evaluator;
     Solver solver;
+    OCRReader ocr;
 
 
     void appendToExpression(const QString& value);

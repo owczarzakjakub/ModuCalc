@@ -1,7 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include <QFileDialog>
 #include "src/types/matrix.h"
+#include "src/core/expression_utils.h"
 #include <stdexcept>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -304,4 +306,26 @@ void MainWindow::on_ButtonTransposeB_clicked()
         QMessageBox::warning(this, "Błąd", e.what());
     }
 }
+
+
+void MainWindow::on_OCRButton_clicked()
+{
+    QString imagePath = QFileDialog::getOpenFileName(
+        this,
+        "Wybierz obraz z równaniem",
+        "",
+        "");
+    if(imagePath.isEmpty()){
+        return;
+    }
+
+    QString equation = ocr.readEquation(imagePath);
+
+    equation = expression_utils::sanitizeExpression(equation);
+
+    currentExpression = equation.toStdString();
+
+    ui->lineEditDisplay->setText(equation);
+}
+
 

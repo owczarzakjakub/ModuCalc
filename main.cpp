@@ -4,7 +4,9 @@
 #include "src/core/parser.h"
 #include "src/core/evaluator.h"
 #include "src/core/solver.h"
+#include "src/ocr/OCRReader.h"
 
+#include <QDebug>
 #include <vector>
 #include <iostream>
 #include <string>

@@ -468,6 +468,19 @@
       <string>=</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="OCRButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>181</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Wczytaj równanie ze zdjęcia</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QStatusBar" name="statusbar_2">
     <property name="geometry">
