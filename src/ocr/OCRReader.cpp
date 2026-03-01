@@ -10,6 +10,9 @@ OCRReader::OCRReader(QObject *parent) : QObject(parent)
 {
     QString appDir = QCoreApplication::applicationDirPath();
     tesseractPath = appDir + "/tesseract/tesseract.exe";
+
+    qDebug() << "APP DIR:" << appDir;
+    qDebug() << QFile::exists(appDir + "/tesseract/tesseract.exe");
 }
 
 void OCRReader::setTesseractPath(const QString &path)
