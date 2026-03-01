@@ -1,0 +1,34 @@
+# Build directories
+build/
+out/
+cmake-build-*/
+
+# Qt Creator user files
+*.pro.user
+*.pro.user.*
+*.autosave
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt.user
+
+# Object files
+*.o
+*.obj
+*.a
+*.so
+
+# Qt generated files
+moc_*
+ui_*
+qrc_*
+
+# Temporary files
+*~
+*.swp
+*.tmp
+
+# OCR local runtime
+tesseract/*.dll
+tesseract/*.exe

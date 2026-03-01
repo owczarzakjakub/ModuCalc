@@ -3,10 +3,13 @@
 #include <QFileInfo>
 #include <QTemporaryFile>
 #include <QDebug>
+#include <QString>
+#include <QCoreApplication>
 
 OCRReader::OCRReader(QObject *parent) : QObject(parent)
 {
-    tesseractPath = "tesseract";
+    QString appDir = QCoreApplication::applicationDirPath();
+    tesseractPath = appDir + "/tesseract/tesseract.exe";
 }
 
 void OCRReader::setTesseractPath(const QString &path)
@@ -16,6 +19,12 @@ void OCRReader::setTesseractPath(const QString &path)
 
 QString OCRReader::readEquation(const QString &imagePath)
 {
+    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+
+    QString appDir = QCoreApplication::applicationDirPath();
+
+    env.insert("TESSDATA_PREFIX", appDir + "/tesseract/tessdata");
+
     QFileInfo checkFile(imagePath);
     if (!checkFile.exists() || !checkFile.isFile()) {
         qWarning() << "Plik obrazu nie istnieje:" << imagePath;
