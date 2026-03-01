@@ -44,3 +44,15 @@
 14	248	7896569726174948	C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/mocs_compilation.cpp	3cb805da0cab76de
 249	3257	7896569728515734	CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj	92449e7fbd751c3d
 3258	3721	7896569758612915	ModuCalc.exe	7a4214d26e5af507
+123	1583	7940704873703207	ModuCalc_autogen/timestamp	3cb805da0cab76de
+123	1583	7940704873703207	ModuCalc_autogen/mocs_compilation.cpp	3cb805da0cab76de
+123	1583	7940704873703207	C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/timestamp	3cb805da0cab76de
+123	1583	7940704873703207	C:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/mocs_compilation.cpp	3cb805da0cab76de
+1633	2866	7940704875647625	CMakeFiles/ModuCalc.dir/src/types/complex.cpp.obj	601ec6e884c1a1dd
+1642	2869	7940704875734972	CMakeFiles/ModuCalc.dir/src/types/vector.cpp.obj	ed098cd373665d8e
+1622	2871	7940704875544338	CMakeFiles/ModuCalc.dir/src/core/evaluator.cpp.obj	1e219d3d6e822224
+1655	2877	7940704875872942	CMakeFiles/ModuCalc.dir/src/types/matrix.cpp.obj	6032bbcc2c39be1d
+1603	4632	7940704875352523	CMakeFiles/ModuCalc.dir/main.cpp.obj	93b2470053c43266
+1592	4824	7940704875245588	CMakeFiles/ModuCalc.dir/ModuCalc_autogen/mocs_compilation.cpp.obj	c5813c4e826b919
+1614	5337	7940704875462768	CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj	92449e7fbd751c3d
+5337	7078	7940704912675547	ModuCalc.exe	7a4214d26e5af507
