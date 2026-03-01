@@ -46,11 +46,15 @@ QString OCRReader::readEquation(const QString &imagePath)
     env.insert("TESSDATA_PREFIX", appDir + "/tesseract/tessdata");
 
     process.setProcessEnvironment(env);
+
     process.start(tesseractPath, args);
-    if (!process.waitForFinished(10000)) {
-        qWarning() << "Tesseract nie odpowiedział w czasie";
+
+    if (!process.waitForStarted(3000)) {
+        qWarning() << "Nie udało się uruchomić Tesseracta";
         return "";
     }
+
+    process.waitForFinished(-1);
 
     QFile resultFile(outPath + ".txt");
     if (!resultFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
