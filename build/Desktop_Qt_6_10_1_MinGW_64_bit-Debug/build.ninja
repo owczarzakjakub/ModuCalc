@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_ModuCalc: phony || ModuCalc_autogen Modu
 build CMakeFiles/ModuCalc.dir/ModuCalc_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\ModuCalc_autogen\mocs_compilation.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\ModuCalc_autogen
@@ -62,7 +62,7 @@ build CMakeFiles/ModuCalc.dir/ModuCalc_autogen/mocs_compilation.cpp.obj: CXX_COM
 build CMakeFiles/ModuCalc.dir/main.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/main.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\main.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir
@@ -72,7 +72,7 @@ build CMakeFiles/ModuCalc.dir/main.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Deb
 build CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/mainwindow.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\mainwindow.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir
@@ -82,7 +82,7 @@ build CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj: CXX_COMPILER__ModuCalc_unscann
 build CMakeFiles/ModuCalc.dir/src/core/core_placeholder.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/core_placeholder.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\core\core_placeholder.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\core
@@ -92,7 +92,7 @@ build CMakeFiles/ModuCalc.dir/src/core/core_placeholder.cpp.obj: CXX_COMPILER__M
 build CMakeFiles/ModuCalc.dir/src/history/history_placeholder.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/history_placeholder.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\history\history_placeholder.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\history
@@ -102,7 +102,7 @@ build CMakeFiles/ModuCalc.dir/src/history/history_placeholder.cpp.obj: CXX_COMPI
 build CMakeFiles/ModuCalc.dir/src/types/types_placeholder.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/types_placeholder.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\types\types_placeholder.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\types
@@ -112,7 +112,7 @@ build CMakeFiles/ModuCalc.dir/src/types/types_placeholder.cpp.obj: CXX_COMPILER_
 build CMakeFiles/ModuCalc.dir/src/modules/modules_placeholder.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/modules_placeholder.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\modules\modules_placeholder.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\modules
@@ -122,7 +122,7 @@ build CMakeFiles/ModuCalc.dir/src/modules/modules_placeholder.cpp.obj: CXX_COMPI
 build CMakeFiles/ModuCalc.dir/src/ocr/OCRReader.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/ocr/OCRReader.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\ocr\OCRReader.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\ocr
@@ -132,7 +132,7 @@ build CMakeFiles/ModuCalc.dir/src/ocr/OCRReader.cpp.obj: CXX_COMPILER__ModuCalc_
 build CMakeFiles/ModuCalc.dir/src/core/token.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/token.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\core\token.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\core
@@ -142,7 +142,7 @@ build CMakeFiles/ModuCalc.dir/src/core/token.cpp.obj: CXX_COMPILER__ModuCalc_uns
 build CMakeFiles/ModuCalc.dir/src/core/lexer.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/lexer.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\core\lexer.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\core
@@ -152,7 +152,7 @@ build CMakeFiles/ModuCalc.dir/src/core/lexer.cpp.obj: CXX_COMPILER__ModuCalc_uns
 build CMakeFiles/ModuCalc.dir/src/core/parser.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/parser.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\core\parser.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\core
@@ -162,7 +162,7 @@ build CMakeFiles/ModuCalc.dir/src/core/parser.cpp.obj: CXX_COMPILER__ModuCalc_un
 build CMakeFiles/ModuCalc.dir/src/core/evaluator.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/evaluator.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\core\evaluator.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\core
@@ -172,7 +172,7 @@ build CMakeFiles/ModuCalc.dir/src/core/evaluator.cpp.obj: CXX_COMPILER__ModuCalc
 build CMakeFiles/ModuCalc.dir/src/history/historymanager.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/historymanager.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\history\historymanager.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\history
@@ -182,7 +182,7 @@ build CMakeFiles/ModuCalc.dir/src/history/historymanager.cpp.obj: CXX_COMPILER__
 build CMakeFiles/ModuCalc.dir/src/history/scriptengine.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/history/scriptengine.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\history\scriptengine.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\history
@@ -192,7 +192,7 @@ build CMakeFiles/ModuCalc.dir/src/history/scriptengine.cpp.obj: CXX_COMPILER__Mo
 build CMakeFiles/ModuCalc.dir/src/modules/trigonometry.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/trigonometry.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\modules\trigonometry.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\modules
@@ -202,7 +202,7 @@ build CMakeFiles/ModuCalc.dir/src/modules/trigonometry.cpp.obj: CXX_COMPILER__Mo
 build CMakeFiles/ModuCalc.dir/src/modules/statistics.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/modules/statistics.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\modules\statistics.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\modules
@@ -212,7 +212,7 @@ build CMakeFiles/ModuCalc.dir/src/modules/statistics.cpp.obj: CXX_COMPILER__Modu
 build CMakeFiles/ModuCalc.dir/src/types/number.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/number.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\types\number.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\types
@@ -222,7 +222,7 @@ build CMakeFiles/ModuCalc.dir/src/types/number.cpp.obj: CXX_COMPILER__ModuCalc_u
 build CMakeFiles/ModuCalc.dir/src/types/complex.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/complex.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\types\complex.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\types
@@ -232,7 +232,7 @@ build CMakeFiles/ModuCalc.dir/src/types/complex.cpp.obj: CXX_COMPILER__ModuCalc_
 build CMakeFiles/ModuCalc.dir/src/types/vector.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/vector.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\types\vector.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\types
@@ -242,7 +242,7 @@ build CMakeFiles/ModuCalc.dir/src/types/vector.cpp.obj: CXX_COMPILER__ModuCalc_u
 build CMakeFiles/ModuCalc.dir/src/types/matrix.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/types/matrix.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\types\matrix.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\types
@@ -252,7 +252,7 @@ build CMakeFiles/ModuCalc.dir/src/types/matrix.cpp.obj: CXX_COMPILER__ModuCalc_u
 build CMakeFiles/ModuCalc.dir/src/core/solver.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/solver.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\core\solver.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\core
@@ -262,7 +262,7 @@ build CMakeFiles/ModuCalc.dir/src/core/solver.cpp.obj: CXX_COMPILER__ModuCalc_un
 build CMakeFiles/ModuCalc.dir/src/core/expression_utils.cpp.obj: CXX_COMPILER__ModuCalc_unscanned_Debug C$:/Users/kubao/Documents/MyProjectRepos/ModuCalc/src/core/expression_utils.cpp || cmake_object_order_depends_target_ModuCalc
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\ModuCalc.dir\src\core\expression_utils.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/kubao/Documents/MyProjectRepos/ModuCalc/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ModuCalc_autogen/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
   OBJECT_FILE_DIR = CMakeFiles\ModuCalc.dir\src\core
@@ -278,7 +278,7 @@ build CMakeFiles/ModuCalc.dir/src/core/expression_utils.cpp.obj: CXX_COMPILER__M
 # Link the executable ModuCalc.exe
 
 build ModuCalc.exe: CXX_EXECUTABLE_LINKER__ModuCalc_Debug CMakeFiles/ModuCalc.dir/ModuCalc_autogen/mocs_compilation.cpp.obj CMakeFiles/ModuCalc.dir/main.cpp.obj CMakeFiles/ModuCalc.dir/mainwindow.cpp.obj CMakeFiles/ModuCalc.dir/src/core/core_placeholder.cpp.obj CMakeFiles/ModuCalc.dir/src/history/history_placeholder.cpp.obj CMakeFiles/ModuCalc.dir/src/types/types_placeholder.cpp.obj CMakeFiles/ModuCalc.dir/src/modules/modules_placeholder.cpp.obj CMakeFiles/ModuCalc.dir/src/ocr/OCRReader.cpp.obj CMakeFiles/ModuCalc.dir/src/core/token.cpp.obj CMakeFiles/ModuCalc.dir/src/core/lexer.cpp.obj CMakeFiles/ModuCalc.dir/src/core/parser.cpp.obj CMakeFiles/ModuCalc.dir/src/core/evaluator.cpp.obj CMakeFiles/ModuCalc.dir/src/history/historymanager.cpp.obj CMakeFiles/ModuCalc.dir/src/history/scriptengine.cpp.obj CMakeFiles/ModuCalc.dir/src/modules/trigonometry.cpp.obj CMakeFiles/ModuCalc.dir/src/modules/statistics.cpp.obj CMakeFiles/ModuCalc.dir/src/types/number.cpp.obj CMakeFiles/ModuCalc.dir/src/types/complex.cpp.obj CMakeFiles/ModuCalc.dir/src/types/vector.cpp.obj CMakeFiles/ModuCalc.dir/src/types/matrix.cpp.obj CMakeFiles/ModuCalc.dir/src/core/solver.cpp.obj CMakeFiles/ModuCalc.dir/src/core/expression_utils.cpp.obj | C$:/Qt/6.10.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.10.1/mingw_64/lib/libQt6EntryPoint.a || ModuCalc_autogen ModuCalc_autogen_timestamp_deps
-  FLAGS = -DQT_QML_DEBUG -g
+  FLAGS = -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.10.1/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.10.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.10.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.10.1/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ModuCalc.dir
