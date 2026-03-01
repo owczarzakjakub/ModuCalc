@@ -29,12 +29,12 @@ Complex Complex::multi(const Complex& c) const{
     return Complex(newReal, newImag);
 }
 
-Complex Complex::div(const Complex& c) const{
-    double divider = pow(c.real, 2) + pow(c.imag, 2);
-    if(divider == 0){
+Complex Complex::div(const Complex& c) const {
+    double divider = c.real * c.real + c.imag * c.imag;
+    if (divider == 0)
         throw std::runtime_error("Dzielenie przez zero.");
-    }
-    double newReal = (real * c.real + imag + c.imag) / divider;
+
+    double newReal = (real * c.real + imag * c.imag) / divider;
     double newImag = (imag * c.real - real * c.imag) / divider;
 
     return Complex(newReal, newImag);

@@ -7,6 +7,9 @@ class Vector
 {
 public:
     Vector(const std::vector<double>& values);
+    double get(size_t i) const;
+    void set(size_t i, double value);
+    size_t size() const;
     Vector add(const Vector& v) const;
     Vector sub(const Vector& v) const;
 

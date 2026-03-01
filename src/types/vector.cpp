@@ -5,6 +5,19 @@
 Vector::Vector(const std::vector<double>& values):data(values){
 
 }
+double Vector::get(size_t i) const {
+    if (i >= data.size())
+        throw std::out_of_range("Zly indeks wektora");
+    return data[i];
+}
+size_t Vector::size() const {
+    return data.size();
+}
+void Vector::set(size_t i, double value) {
+    if (i >= data.size())
+        throw std::out_of_range("Zly indeks wektora");
+    data[i] = value;
+}
 Vector Vector::add(const Vector& v) const {
     if (data.size() != v.data.size()) throw std::logic_error("Zły rozmiar wektorów");
     std::vector<double> result;
@@ -22,7 +35,6 @@ Vector Vector::sub(const Vector& v) const {
     for (int i = 0; i < data.size(); i++) {
         result.push_back(data[i] - v.data[i]);
     }
-
     return Vector(result);
 }
 
