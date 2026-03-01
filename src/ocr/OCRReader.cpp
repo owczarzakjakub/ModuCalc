@@ -19,11 +19,6 @@ void OCRReader::setTesseractPath(const QString &path)
 
 QString OCRReader::readEquation(const QString &imagePath)
 {
-    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-
-    QString appDir = QCoreApplication::applicationDirPath();
-
-    env.insert("TESSDATA_PREFIX", appDir + "/tesseract/tessdata");
 
     QFileInfo checkFile(imagePath);
     if (!checkFile.exists() || !checkFile.isFile()) {
@@ -44,6 +39,13 @@ QString OCRReader::readEquation(const QString &imagePath)
     args << imagePath << outPath << "-l" << "eng";
 
     QProcess process;
+
+    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+
+    QString appDir = QCoreApplication::applicationDirPath();
+    env.insert("TESSDATA_PREFIX", appDir + "/tesseract/tessdata");
+
+    process.setProcessEnvironment(env);
     process.start(tesseractPath, args);
     if (!process.waitForFinished(10000)) {
         qWarning() << "Tesseract nie odpowiedział w czasie";

@@ -28,7 +28,3 @@ qrc_*
 *~
 *.swp
 *.tmp
-
-# OCR local runtime
-tesseract/*.dll
-tesseract/*.exe
