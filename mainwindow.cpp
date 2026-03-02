@@ -14,6 +14,21 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    connect(ui->btnGoToNormal, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(1);
+    });
+
+    connect(ui->btnGoToMatrices, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(2);
+    });
+
+    connect(ui->btnBackToMenu, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(0);
+    });
+
+    connect(ui->btnBackToMenu_2, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(0);
+    });
 
     setupMatrixTables();
 }
