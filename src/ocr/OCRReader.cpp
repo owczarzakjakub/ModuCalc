@@ -5,14 +5,15 @@
 #include <QDebug>
 #include <QString>
 #include <QCoreApplication>
+#include <QDir>
 
 OCRReader::OCRReader(QObject *parent) : QObject(parent)
 {
     QString appDir = QCoreApplication::applicationDirPath();
-    tesseractPath = appDir + "/tesseract/tesseract.exe";
+    tesseractPath = QDir::toNativeSeparators( appDir + "/tesseract/Tesseract-OCR/tesseract.exe");
 
-    qDebug() << "APP DIR:" << appDir;
-    qDebug() << QFile::exists(appDir + "/tesseract/tesseract.exe");
+    qDebug() << "OCR EXEC:" << tesseractPath;
+    qDebug() << QFile::exists(tesseractPath);
 }
 
 void OCRReader::setTesseractPath(const QString &path)
@@ -46,7 +47,7 @@ QString OCRReader::readEquation(const QString &imagePath)
     QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
 
     QString appDir = QCoreApplication::applicationDirPath();
-    env.insert("TESSDATA_PREFIX", appDir + "/tesseract/tessdata");
+    env.insert("TESSDATA_PREFIX", appDir + "/tesseract/Tesseract-OCR/tessdata");
 
     process.setProcessEnvironment(env);
 
