@@ -22,6 +22,14 @@ MainWindow::MainWindow(QWidget *parent)
         ui->stackedWidget->setCurrentIndex(2);
     });
 
+    connect(ui->btnGoToVectors, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(3);
+    });
+
+    connect(ui->btnGoToComplex, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(4);
+    });
+
     connect(ui->btnBackToMenu, &QPushButton::clicked, this, [this]() {
         ui->stackedWidget->setCurrentIndex(0);
     });
@@ -30,6 +38,82 @@ MainWindow::MainWindow(QWidget *parent)
         ui->stackedWidget->setCurrentIndex(0);
     });
 
+    connect(ui->btnBackToMenu_3, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(0);
+    });
+
+    connect(ui->btnBackToMenu_4, &QPushButton::clicked, this, [this]() {
+        ui->stackedWidget->setCurrentIndex(0);
+    });
+
+
+    connect(ui->btnVectorAdd, &QPushButton::clicked, this, [this]() {
+
+        Vector v1 = getVectorFromTable(ui->tableVectorA);
+        Vector v2 = getVectorFromTable(ui->tableVectorB);
+        Vector result = v1.add(v2);
+        for(int i = 0; i < (int)result.size(); ++i) {
+            ui->tableVectorResult->setItem(0, i, new QTableWidgetItem(QString::number(result.get(i))));
+        }
+    });
+    connect(ui->btnVectorDot, &QPushButton::clicked, this, [this]() {
+        Vector v1 = getVectorFromTable(ui->tableVectorA);
+        Vector v2 = getVectorFromTable(ui->tableVectorB);
+        double dotProduct = v1.dot(v2);
+        ui->lblVectorScalarResult->setText("Iloczyn skalarny: " + QString::number(dotProduct));
+    });
+
+    connect(ui->btnVectorSub, &QPushButton::clicked, this, [this]() {
+        Vector v1 = getVectorFromTable(ui->tableVectorA);
+        Vector v2 = getVectorFromTable(ui->tableVectorB);
+        Vector result = v1.sub(v2);
+        for(int i = 0; i < (int)result.size(); ++i) {
+            ui->tableVectorResult->setItem(0, i, new QTableWidgetItem(QString::number(result.get(i))));
+        }
+    });
+    connect(ui->btnVectorLength, &QPushButton::clicked, this, [this]() {
+        Vector v1 = getVectorFromTable(ui->tableVectorA);
+        double len = v1.length();
+        ui->lblVectorScalarResult->setText("Długość wektora A: " + QString::number(len));
+    });
+    connect(ui->btnComplexAdd, &QPushButton::clicked, this, [this]() {
+        Complex a = getComplex(ui->inputReA, ui->inputImA);
+        Complex b = getComplex(ui->inputReB, ui->inputImB);
+
+        Complex result = a.add(b);
+        showComplexResult(result);
+    });
+    connect(ui->btnComplexSub, &QPushButton::clicked, this, [this]() {
+        Complex a = getComplex(ui->inputReA, ui->inputImA);
+        Complex b = getComplex(ui->inputReB, ui->inputImB);
+        showComplexResult(a.sub(b));
+    });
+
+    connect(ui->btnComplexMulti, &QPushButton::clicked, this, [this]() {
+        Complex a = getComplex(ui->inputReA, ui->inputImA);
+        Complex b = getComplex(ui->inputReB, ui->inputImB);
+        showComplexResult(a.multi(b));
+    });
+
+    connect(ui->btnComplexDiv, &QPushButton::clicked, this, [this]() {
+        Complex a = getComplex(ui->inputReA, ui->inputImA);
+        Complex b = getComplex(ui->inputReB, ui->inputImB);
+        showComplexResult(a.div(b));
+    });
+    connect(ui->btnComplexMag, &QPushButton::clicked, this, [this]() {
+        Complex a = getComplex(ui->inputReA, ui->inputImA);
+        double mag = a.magnitude();
+        ui->lblComplexResult->setText("Moduł |A| = " + QString::number(mag));
+    });
+    connect(ui->btnComplexAngle, &QPushButton::clicked, this, [this]() {
+        Complex a = getComplex(ui->inputReA, ui->inputImA);
+        double ang = a.angle();
+        ui->lblComplexResult->setText("Kąt Arg(A) = " + QString::number(ang) + " rad");
+    });
+    connect(ui->btnComplexConj, &QPushButton::clicked, this, [this]() {
+        Complex a = getComplex(ui->inputReA, ui->inputImA);
+        showComplexResult(a.conjugate());
+    });
     setupMatrixTables();
 }
 
@@ -342,5 +426,27 @@ void MainWindow::on_OCRButton_clicked()
 
     ui->lineEditDisplay->setText(equation);
 }
+Vector MainWindow::getVectorFromTable(QTableWidget* table) {
+    std::vector<double> values;
+    for(int i = 0; i < table->columnCount(); ++i) {
+        auto item = table->item(0, i);
+        double val = (item) ? item->text().toDouble() : 0.0;
+        values.push_back(val);
+    }
+    return Vector(values);
+}
+Complex MainWindow::getComplex(QLineEdit* re, QLineEdit* im) {
+    double r = re->text().isEmpty() ? 0.0 : re->text().toDouble();
+    double i = im->text().isEmpty() ? 0.0 : im->text().toDouble();
+    return Complex(r, i);
+}
 
+void MainWindow::showComplexResult(Complex c) {
+    double r = c.getReal();
+    double i = c.getImag();
 
+    QString sign = (i >= 0) ? " + " : " - ";
+
+    QString text = QString::number(r) + sign + QString::number(std::abs(i)) + "i";
+    ui->lblComplexResult->setText("Wynik: " + text);
+}

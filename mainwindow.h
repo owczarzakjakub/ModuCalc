@@ -13,6 +13,7 @@
 #include "src/core/solver.h"
 #include "src/types/matrix.h"
 #include "src/ocr/OCRReader.h"
+#include "src/types/complex.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -99,9 +100,11 @@ private:
     Solver solver;
     OCRReader ocr;
 
-
+    Vector getVectorFromTable(QTableWidget* table);
     void appendToExpression(const QString& value);
     void setupMatrixTables();
     Matrix readMatrixFromTable(QTableWidget* table);
     void writeMatrixToTable(QTableWidget* table, const Matrix& m);
+    Complex getComplex(QLineEdit* re, QLineEdit* im);
+    void showComplexResult(Complex c);
 };
